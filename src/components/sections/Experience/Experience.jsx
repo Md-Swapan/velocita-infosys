@@ -1,4 +1,5 @@
 import React from "react";
+import './Experience.css'
 
 const Experience = () => {
   return (
@@ -14,7 +15,7 @@ const Experience = () => {
               Real Solution <br /> <span>For Your Business</span>
             </h2>
 
-            <p>As a leading IT consulting firm, we help business to reinvent and excel by </p>
+            <p>As a leading IT consulting firm, we help businesses to reinvent and excel by establishing complete reliance on information technology and offering high quality technology consulting services.</p>
           </div>
         </div>
       </div>
