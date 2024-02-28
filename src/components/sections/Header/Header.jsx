@@ -11,9 +11,10 @@ import BubbleImageSix from '/public/Agency/image 56.png'
 import BubbleImageSeven from '/public/Agency/open-door_8465313.png'
 import Image from 'next/image';
 import './header.css'
+
 const Header = () => {
     return (
-        <header className='container mt-5'>
+        <header className='container mt-5 py-5'>
             <div className="row">
                 <div className="col-lg-6 d-flex mb-5 mb-lg-0 align-items-center justify-content-center">
                     <div  className="banner_content">
@@ -22,11 +23,11 @@ const Header = () => {
                             create solution</span>
                             </h1>
                             <p>As a leading IT consulting firm, we help businesses to reinvent andexcel by establishing complete relianceon information technology andoffering high quality technology consulting services.</p>
-                            <button className='get_start_btn me-2'>Get Start</button>
+                            <button className='get_start_btn me-2 mt-4'>Get Start</button>
                             <button className='get_start_btn outlined_btn'>Watch Now <Image src={RightArrow} className='ms-2' /></button>
                     </div>
                 </div>
-                <div className="col-lg-6 d-flex align-content-center justify-content-center">
+                <div className="col-lg-6 d-flex  align-content-center justify-content-end">
                     <div className='position-relative'>
                         <Image src={BannerImage} className='banner_main_image' />
                         <Image className='bubble_one' src={BubbleImageOne} width={55} />
