@@ -2,13 +2,20 @@ import React from 'react';
 import Navbar from '../Navbar/Navbar';
 import BannerImage from '/public/bannerimg.png'
 import RightArrow from '/public/rightarrow.png'
+import BubbleImageOne from '/public/Agency/advertisement_6059057.png'
+import BubbleImageTwo from '/public/Agency/artificial-intelligence_9626671.png'
+import BubbleImageThree from '/public/Agency/Group 1000005377.png'
+import BubbleImageFour from '/public/Agency/Group 1000005379.png'
+import BubbleImageFive from '/public/Agency/Group 1000005380.png'
+import BubbleImageSix from '/public/Agency/image 56.png'
+import BubbleImageSeven from '/public/Agency/open-door_8465313.png'
 import Image from 'next/image';
 import './header.css'
 const Header = () => {
     return (
-        <header style={{ minHeight: "400px" }} className='container mt-5'>
+        <header className='container mt-5'>
             <div className="row">
-                <div className="col-md-6 d-flex align-items-center justify-content-center">
+                <div className="col-lg-6 d-flex mb-5 mb-lg-0 align-items-center justify-content-center">
                     <div  className="banner_content">
                         <h1>We constantly 
                             <span> innovate to
@@ -19,9 +26,16 @@ const Header = () => {
                             <button className='get_start_btn outlined_btn'>Watch Now <Image src={RightArrow} className='ms-2' /></button>
                     </div>
                 </div>
-                <div className="col-md-6 d-flex align-content-center justify-content-center">
-                    <div>
-                        <Image src={BannerImage} width={"100%"} />
+                <div className="col-lg-6 d-flex align-content-center justify-content-center">
+                    <div className='position-relative'>
+                        <Image src={BannerImage} className='banner_main_image' />
+                        <Image className='bubble_one' src={BubbleImageOne} width={55} />
+                        <Image className='bubble_two' src={BubbleImageTwo} width={55} />
+                        <Image className='bubble_three' src={BubbleImageThree} width={55} />
+                        <Image className='bubble_four' src={BubbleImageFour} width={55} />
+                        <Image className='bubble_five' src={BubbleImageFive} width={55} />
+                        <Image className='bubble_six' src={BubbleImageSix} width={55} />
+                        <Image className='bubble_seven' src={BubbleImageSeven} width={55} />
                     </div>
                 </div>
             </div>
