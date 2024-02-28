@@ -11,3 +11,29 @@
   --light-color: #89C540;
   --dark-color:#020b13;
 }
+
+body{
+  background: var(--dark-color) !important;
+  min-height: 100vh;
+}
+
+nav.velocita_nav ul li a,.banner_content .get_start_btn {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+nav.velocita_nav ul li a.link_btn,.banner_content .get_start_btn {
+  padding: 16px 24px 16px 24px;
+  border-radius: 30px;
+  background: var(--primary-color);
+  text-wrap: nowrap;
+  border: none;
+}
+.banner_content .get_start_btn.outlined_btn {
+  border: 1px solid  var(--deep-color);
+  background: none;
+}

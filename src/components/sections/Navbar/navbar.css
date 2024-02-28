@@ -1,0 +1,15 @@
+nav.velocita_nav {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+nav.velocita_nav ul {
+  display: flex;
+  margin-bottom: 0;
+  gap: 30px;
+}
+nav.velocita_nav ul li {
+  list-style: none;
+}
+
