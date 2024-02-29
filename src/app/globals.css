@@ -1,23 +1,24 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
-:root{
-  --primary-color: linear-gradient(180deg, #09643F 0%, #89C540 100%);
-  --deep-color: #09643F;
-  --light-color: #89C540;
-  --dark-color:#020b13;
+:root {
+  --primary-color: linear-gradient(180deg, #09643f 0%, #89c540 100%);
+  --deep-color: #09643f;
+  --light-color: #89c540;
+  --dark-color: #020b13;
 }
 
-body{
+body {
   background: var(--dark-color) !important;
   min-height: 100vh;
 }
 
-nav.velocita_nav ul li a,.banner_content .get_start_btn {
+nav.velocita_nav ul li a,
+nav.velocita_nav .mobile_menu p a,
+.banner_content .get_start_btn {
   font-size: 16px;
   font-weight: 400;
   line-height: 19px;
@@ -26,7 +27,15 @@ nav.velocita_nav ul li a,.banner_content .get_start_btn {
   text-decoration: none;
 }
 
-nav.velocita_nav ul li a.link_btn,.banner_content .get_start_btn {
+nav.velocita_nav ul li a.link_btn,
+.banner_content .get_start_btn {
+  padding: 16px 24px 16px 24px;
+  border-radius: 30px;
+  background: var(--primary-color);
+  text-wrap: nowrap;
+  border: none;
+}
+.mobile_link_btn {
   padding: 16px 24px 16px 24px;
   border-radius: 30px;
   background: var(--primary-color);
@@ -34,6 +43,6 @@ nav.velocita_nav ul li a.link_btn,.banner_content .get_start_btn {
   border: none;
 }
 .banner_content .get_start_btn.outlined_btn {
-  border: 1px solid  var(--deep-color);
+  border: 1px solid var(--deep-color);
   background: none;
 }
