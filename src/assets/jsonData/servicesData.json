@@ -1,0 +1,82 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "image": "./Services/Software_And_Web_Development.png",
+      "title": "Software & Web Development",
+      "list": [
+        "Web Development",
+        "App Development",
+        "UI / UX",
+        "QA",
+        "Custom Software"
+      ],
+      "link": ""
+    },
+    {
+      "id": 1,
+      "image": "./Services/Digital_Marketing.png",
+      "title": "Digital Marketing",
+      "list": [
+        "SEO",
+        "Email Marketing",
+        "Content Marketing",
+        "PPC Advertising",
+        "Social Media Merketing"
+      ],
+      "link": ""
+    },
+    {
+      "id": 1,
+      "image": "./Services/Artificial_Intelligency.png",
+      "title": "Artificial Intelligency",
+      "list": [
+        "Machine Learning",
+        "Computer Vision",
+        "AI in Healthcare",
+        "LLM",
+        "NLP"
+      ],
+      "link": ""
+    },
+    {
+      "id": 1,
+      "image": "./Services/DevOps.png",
+      "title": "DevOps",
+      "list": [
+        "Containerization",
+        "CI",
+        "CD",
+        "Infrastructure as Code",
+        "Monitoring and Logging"
+      ],
+      "link": ""
+    },
+    {
+      "id": 1,
+      "image": "./Services/Creative_Services.png",
+      "title": "Creative Services",
+      "list": [
+        "SEO",
+        "Email Marketing",
+        "Content Marketing",
+        "PPC Advertising",
+        "Social Media Merketing"
+      ],
+      "link": ""
+    },
+    {
+      "id": 1,
+      "image": "./Services/Hiring_And_Offshore.png",
+      "title": "Hiring and offshore",
+      "list": [
+        "RPO Services",
+        "Offshore Outsourcing",
+        "BPO Solutions",
+        "Staff Augmentation",
+        "KPO Services"
+      ],
+      "link": ""
+    }
+  ]
+}
