@@ -1,4 +1,79 @@
-.experience_content_container{
+.experience_section {
+  background: #0b0e09;
+  margin-top: 80px;
+  padding: 50px 0px;
+}
+.experience_content_container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+.year_of_experience h1 {
+  font-size: 380px;
+  background: -webkit-linear-gradient(90deg, #89c540 0%, #09643f 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.year_of_experience span {
+  font-size: 100px;
+  margin-top: 260px;
+  color: white !important;
+}
+.year_of_experience h5 {
+  font-size: 47px;
+  color: white !important;
+  margin-top: -50px;
+}
+
+
+.real_solution_content p{
+  color: white;
+}
+.real_solution_content_title{
+  margin-bottom: 20px;
+}
+.real_solution_content_title .span1{
+   color: white;
+  font-size: 35px;
+  font-weight: 800;
+  margin: 0px 0px 20px 0px;
+}
+.real_solution_content_title .span2{
+  font-size: 35px;
+  font-weight: 800;
+  color: #0b0e09;
+  -webkit-text-stroke: .5px white;
+}
+
+.real_solution_content .read_more_btn{
+  border: none;
+  background: -webkit-linear-gradient(90deg, #89c540 0%, #09643f 100%);
+  padding: 10px 20px;
+  margin-top: 20px;
+  color: white;
+  border-radius: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .experience_content_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+    align-items: center;
+  }
+
+  .year_of_experience h1 {
+    font-size: 250px;
+  }
+  .year_of_experience span {
+    font-size: 100px;
+    margin-top: 140px;
+  }
+
+  .year_of_experience h5 {
+    font-size: 30px;
+    margin-top: -30px;
+  }
 }

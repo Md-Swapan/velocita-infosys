@@ -19,6 +19,71 @@
     text-align: left;
     color: #C5C5C5;
 }
+.banner_main_image{
+    width: 100%;
+}
+
+/* Define the keyframes for the bounce animation */
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+.bubble_one, .bubble_two   ,.bubble_six,.bubble_seven {
+    animation: bounce 3s infinite;
+}
+
+.bubble_one {
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+.bubble_two {
+    position: absolute;
+    left: 55%;
+    top: 0%;
+}
+.bubble_three {
+    position: absolute;
+    top: 65%;
+    right: 0%;
+}
+.bubble_four {
+    position: absolute;
+    left: 15%;
+    bottom: 0%;
+}
+.bubble_five {
+    position: absolute;
+    left: 15%;
+    top: 10%;
+}
+.bubble_six {
+    position: absolute;
+    left: 50%;
+    bottom: 0%;
+}
+.bubble_seven {
+    position: absolute;
+    right: 5%;
+    top: 30%;
+}
+
+@media only screen and (max-width: 768px) {
+    .banner_content h1{
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 37px;
+        letter-spacing: 0.005em;
+        color: rgba(255, 255, 255, 1);
+    }
+    .banner_main_image{
+        width: 300px;
+        height: 300px;
+    }
+  }
 /* .banner_content h1 span {
     text-shadow: 0 0 10px rgba(9, 100, 63, 0.5), 0 0 20px rgba(137, 197, 64, 0.8);
 } */

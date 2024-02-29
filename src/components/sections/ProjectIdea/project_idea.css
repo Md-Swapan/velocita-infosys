@@ -1,0 +1,115 @@
+.project_idea {
+  width: 100%;
+  background-image: url("/ProjectIdea/Line.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  padding: 100px 0px;
+  background-color: #0c0d12;
+}
+
+.project_idea .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.project_idea .container .left .heading {
+  color: #fff;
+  max-width: 348px;
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.project_idea .container .left .para {
+  color: #c5c5c5;
+  font-size: 16px;
+  margin-top: 16px;
+}
+
+.project_idea .container .right {
+  display: grid;
+  gap: 50px;
+  height: fit-content;
+}
+.project_idea .container .right .form_control {
+  display: grid;
+  gap: 18px;
+}
+.project_idea .container .right .form_control_group {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.project_idea .container .right .form_control .input_label {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.project_idea .container .right .form_control .input_field {
+  width: 100%;
+  border-width: 0 0 1px 0;
+  background-color: transparent;
+  color: #89c540;
+  padding-bottom: 4px;
+}
+.project_idea .container .right .form_control .input_field::placeholder {
+  color: #c5c5c5;
+  font-size: 16px;
+}
+.project_idea .container .right .form_control .input_field:focus {
+  outline: none;
+}
+
+.project_idea .container .right .submit_button {
+  width: fit-content;
+  padding: 15px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  background: linear-gradient(
+    180deg,
+    rgba(9, 100, 63, 1) 10%,
+    rgba(137, 197, 64, 0.9) 70%
+  );
+  border: 0;
+  border-radius: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .project_idea .container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .project_idea .container .left .heading {
+    color: #fff;
+    max-width: 348px;
+    font-size: 35px;
+    font-weight: 700;
+  }
+  .project_idea .container .right .form_control_group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .project_idea .container .right {
+    gap: 30px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .project_idea .container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+  .project_idea .container .right .form_control_group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+}
