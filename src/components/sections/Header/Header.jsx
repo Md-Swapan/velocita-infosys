@@ -27,7 +27,7 @@ const Header = () => {
                             <button className='get_start_btn outlined_btn'>Watch Now <Image src={RightArrow} className='ms-2' /></button>
                     </div>
                 </div>
-                <div className="col-lg-6 d-flex  align-content-center justify-content-end">
+                <div className="col-lg-6 d-flex  align-content-center justify-content-center justify-content-lg-end">
                     <div className='position-relative'>
                         <Image src={BannerImage} className='banner_main_image' />
                         <Image className='bubble_one' src={BubbleImageOne} width={55} />
