@@ -54,3 +54,26 @@
   color: white;
   border-radius: 30px;
 }
+
+
+@media screen and (max-width: 768px) {
+  .experience_content_container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 40px;
+    align-items: center;
+  }
+
+  .year_of_experience h1 {
+    font-size: 250px;
+  }
+  .year_of_experience span {
+    font-size: 100px;
+    margin-top: 140px;
+  }
+
+  .year_of_experience h5 {
+    font-size: 30px;
+    margin-top: -30px;
+  }
+}
