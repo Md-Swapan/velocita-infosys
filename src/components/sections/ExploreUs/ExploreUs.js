@@ -12,7 +12,7 @@ export default function ExploreUs() {
             <SliderRightToLeft badgeTitle={'International Call Center'} products={internationalCallcenterData} />
             <SliderLeftToRight badgeTitle={"Software Development"} products={softWareDevelopmentSliderData}/>
             <SliderRightToLeft badgeTitle={'Digital Marketing'} products={digitalMarketingSliderData}/>
-            <SliderLeftToRight badgeTitle={"Software Development"} products={softWareDevelopmentSliderData}/>
+            <SliderLeftToRight badgeTitle={"Graphics Design"} products={softWareDevelopmentSliderData}/>
         </div>
     );
 }
