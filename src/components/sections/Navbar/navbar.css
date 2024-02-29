@@ -4,6 +4,9 @@ nav.velocita_nav {
   align-items: center;
   justify-content: space-between;
 }
+nav.velocita_nav .velocita_logo img{
+  width: 270px;
+}
 nav.velocita_nav ul {
   display: flex;
   margin-bottom: 0;
@@ -11,5 +14,42 @@ nav.velocita_nav ul {
 }
 nav.velocita_nav ul li {
   list-style: none;
+  display: flex;
+  align-items: center;
+}
+.menu_icon{  
+  -webkit-filter: grayscale(1) invert(1);
+  filter: grayscale(1) invert(1);
+  cursor: pointer;
+}
+.mobile_menu{
+  position: fixed;
+  background: #212529;
+  right: 0;
+  top: 0;
+  bottom:0;
+  width: 80%;
+  height: 100%;
+  z-index: 2000;
+  overflow: hidden;
+  padding: 20px;
+  transition: .4s linear;
+}
+.mobile_menu.hide{
+  right: -100%;
+  opacity:0;
+}
+.mobile_menu.show{
+  right: 0%;
+  opacity: 1;
+}
+.mobile_menu p{
+  text-align: center;
 }
 
+@media only screen and (max-width: 768px) {
+  nav.velocita_nav .velocita_logo img{
+    width: 150px;
+    object-fit: contain;
+  }
+}

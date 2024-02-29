@@ -1,13 +1,34 @@
+"use client"
 import Link from "next/link";
 import './navbar.css'
 import Logo from '/public/logo.png'
 import Image from "next/image";
+import MenuIcon from "/public/menu.png";
+import CloseIcon from "/public/close.png";
+import { useState } from "react";
 const Navbar = () => {
+  const [openMenu,setOpenMenu]=useState(false)
   return (
     <nav className="velocita_nav container mt-3">
        <div className="velocita_logo">
-       <Image width={270} src={Logo} />
+       <Image  src={Logo} />
        </div>
+       {/* for mobile device  */}
+       <Image onClick={()=>setOpenMenu(true)} className="menu_icon d-md-none" width={30} src={MenuIcon} />
+       <div className={`mobile_menu d-md-none ${openMenu?'show':'hide'}`}>
+         <Image onClick={()=>setOpenMenu(false)} className="menu_icon d-md-none mb-5" width={30} src={CloseIcon} />
+          <p><Link href={"#"}>Home</Link></p>
+          <p><Link href={"#"}>Services</Link></p>
+          <p><Link href={"#"}>About Us</Link></p>
+          <p><Link href={"#"}>Portfolio</Link></p>
+          <p><Link href={"#"}>Blog</Link></p>
+          <p><Link href={"#"}>Career</Link></p>
+          <p><Link href={"#"}>Team</Link></p>
+          <p><Link  className="mobile_link_btn" href={"#"}>Contact Us</Link></p>
+       </div>
+        {/* for mobile device  */}
+
+        {/* for desktop device */}
        <ul className="d-none d-md-flex">
           <li><Link href={"#"}>Home</Link></li>
           <li><Link href={"#"}>Services</Link></li>
@@ -18,6 +39,7 @@ const Navbar = () => {
           <li><Link href={"#"}>Team</Link></li>
           <li><Link className="link_btn" href={"#"}>Contact Us</Link></li>
        </ul>
+       {/* for desktop device */}
     </nav>
   );
 };
