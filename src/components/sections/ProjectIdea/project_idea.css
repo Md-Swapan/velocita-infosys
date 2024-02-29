@@ -86,6 +86,12 @@
     grid-template-columns: 1fr;
     gap: 50px;
   }
+  .project_idea .container .left .heading {
+    color: #fff;
+    max-width: 348px;
+    font-size: 35px;
+    font-weight: 700;
+  }
   .project_idea .container .right .form_control_group {
     display: grid;
     grid-template-columns: 1fr;

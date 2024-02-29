@@ -8,9 +8,9 @@ import ProjectIdea from "@/components/sections/ProjectIdea/ProjectIdea"
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Navbar />
+      {/* <Navbar />
       <Header />
-      <Experience />
+      <Experience /> */}
       <Services />
       <ProjectIdea />
     </main>
