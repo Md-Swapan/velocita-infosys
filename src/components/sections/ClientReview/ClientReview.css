@@ -1,0 +1,106 @@
+.client_review_section {
+    min-height: 100vh;
+    padding: 100px 0px;
+    width: 65%;
+    margin: auto;
+}
+
+.heading {
+    color: #ffffff;
+    font-size: 36px;
+    text-align: center;
+    padding-bottom: 80px;
+}
+
+.client_slider_container {
+    background-image: url(../../../assets/images/client-review-section-img/Group\ 1000005238\ .png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 30% 100%;
+    color: #ffffff;
+    padding: 100px 50px;
+
+}
+
+.slick-next:before {
+    content: '';
+    display: block;
+    width: 71px;
+    height: 40px;
+    background-image: url("../../../assets/images/client-review-section-img/Group\ 1000005240.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px;
+}
+.slick-prev:before {
+    content: '';
+    display: block;
+    width: 71px;
+    height: 40px;
+    background-image: url("../../../assets/images/client-review-section-img/Group\ 1000005239.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.slick-next {
+    right: 40px;
+}
+.slick-prev {
+    left: -80px;
+}
+
+
+.slide_containt {
+    text-align: center;
+    padding: 2% 20%;
+}
+
+.slide_containt .comments {
+    color: #C5C5C5;
+    padding-bottom: 20px;
+    font-size: 36px;
+}
+
+.slide_containt h5 {
+    color: #EBEBEB;
+    padding-bottom: 10px;
+}
+
+.slide_containt h6 {
+    color: #09643F;
+}
+
+@media only screen and (max-width: 768px) {
+    .client_review_section {
+        width: 80%;
+    }
+
+    .heading {
+        font-size: 26px;
+    }
+
+    .client_slider_container {
+        background-size: 50% 100%;
+        padding: 40px 40px;
+    }
+    .slide_containt .comments {
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .client_review_section {
+        width: 100%;
+    }
+
+    .heading {
+        font-size: 26px;
+    }
+
+    .client_slider_container {
+        background-size: 30% 100%;
+    }
+
+    .slide_containt .comments {
+        font-size: 12px;
+    }
+}
