@@ -91,6 +91,7 @@
     }
     .footer .footer_bottom{
         flex-direction: column-reverse;
+        padding-bottom: 20px;
     }
   }
 
