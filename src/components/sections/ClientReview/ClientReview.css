@@ -42,11 +42,11 @@
   background-repeat: no-repeat;
 }
 .slick-next {
-  right: 40px;
+  right: 60px;
 }
 .slick-prev {
-  left: -80px;
-  
+  left: 10px;
+
 }
 
 .slide_containt {

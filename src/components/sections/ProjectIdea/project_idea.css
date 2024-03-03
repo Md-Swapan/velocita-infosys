@@ -14,7 +14,7 @@
   gap: 30px;
 }
 
-.project_idea .container .left .heading {
+.project_idea .container .left .project_idea_heading {
   color: #fff;
   max-width: 348px;
   font-size: 52px;
@@ -23,8 +23,8 @@
 
 .project_idea .container .left .para {
   color: #c5c5c5;
-  font-size: 16px;
-  margin-top: 16px;
+  font-size: 18px;
+  margin-top: 40px;
 }
 
 .project_idea .container .right {
