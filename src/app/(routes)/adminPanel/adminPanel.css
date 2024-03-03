@@ -1,0 +1,26 @@
+.sidebar{
+  height: 100vh;
+  background-color: #0b0e09;
+  padding: 40px;
+}
+.sidebar ul{
+  margin-top: 40px;
+  list-style: none;
+  font-size: 18px;
+  border-top: 1px solid green;
+}
+.sidebar ul li{
+  margin-top: 20px;
+  font-weight: 600;
+  color: rgb(187, 187, 187);
+  cursor: pointer;
+}
+
+.admin_header{
+  width: 100%;
+  padding: 40px;
+  background-color: #0b0e09;
+  color: rgb(233, 233, 233);
+  display: flex;
+  justify-content: end;
+}
