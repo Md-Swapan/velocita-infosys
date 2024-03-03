@@ -5,7 +5,11 @@ import Header from "@/components/sections/Header/Header";
 import Services from "@/components/sections/Services/Services";
 import ProjectIdea from "@/components/sections/ProjectIdea/ProjectIdea";
 import ExploreUs from "@/components/sections/ExploreUs/ExploreUs";
+
 import Footer from "@/components/sections/Footer/Footer";
+
+import ClientReview from "@/components/sections/ClientReview/ClientReview";
+
 export default function Home() {
   return (
     <main className={styles.main}>
@@ -14,6 +18,7 @@ export default function Home() {
       <Experience />
       <ExploreUs />
       <Services />
+      <ClientReview/>
       <ProjectIdea />
       <Footer />
     </main>
