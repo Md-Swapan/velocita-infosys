@@ -25,6 +25,7 @@ const Navbar = () => {
           <p><Link href={"#"}>Career</Link></p>
           <p><Link href={"#"}>Team</Link></p>
           <p><Link  className="mobile_link_btn" href={"#"}>Contact Us</Link></p>
+          <p><Link  className="mobile_link_btn" href={"#"}>Login</Link></p>
        </div>
         {/* for mobile device  */}
 
@@ -38,6 +39,7 @@ const Navbar = () => {
           <li><Link href={"#"}>Career</Link></li>
           <li><Link href={"#"}>Team</Link></li>
           <li><Link className="link_btn" href={"#"}>Contact Us</Link></li>
+          <li><Link   href={"#"}>Login</Link></li>
        </ul>
        {/* for desktop device */}
     </nav>
