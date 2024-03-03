@@ -33,13 +33,13 @@ const ClientReview = () => {
     speed: 300,
     slidesToShow: 1,
     slidesToScroll: 1,
-    // autoplay: true,
+    autoplay: true,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <div className="client_review_section">
-      <h2 className="heading">What Our Clients Say?</h2>
+    <div className="client_review_section container">
+      <h1 className="heading">What Our Clients Say?</h1>
       <div className="client_slider_container">
         <div>
           <Slider {...settings}>
