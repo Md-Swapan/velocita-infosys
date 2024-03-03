@@ -6,8 +6,14 @@ import Image from "next/image";
 import MenuIcon from "/public/menu.png";
 import CloseIcon from "/public/close.png";
 import { useState } from "react";
+
+
+
 const Navbar = () => {
   const [openMenu,setOpenMenu]=useState(false)
+
+  const token = localStorage.getItem("token");
+
   return (
     <nav className="velocita_nav container mt-3">
        <div className="velocita_logo">
@@ -21,11 +27,11 @@ const Navbar = () => {
           <p><Link href={"#"}>Services</Link></p>
           <p><Link href={"#"}>About Us</Link></p>
           <p><Link href={"#"}>Portfolio</Link></p>
-          <p><Link href={"#"}>Blog</Link></p>
           <p><Link href={"#"}>Career</Link></p>
           <p><Link href={"#"}>Team</Link></p>
           <p><Link  className="mobile_link_btn" href={"#"}>Contact Us</Link></p>
-          <p><Link  className="mobile_link_btn" href={"#"}>Login</Link></p>
+         {token && <p><Link  href={"/adminPanel"}>Admin Panel</Link></p>}
+          <p><Link   href={"/login"}>Login</Link></p>
        </div>
         {/* for mobile device  */}
 
@@ -35,11 +41,11 @@ const Navbar = () => {
           <li><Link href={"#"}>Services</Link></li>
           <li><Link href={"#"}>About Us</Link></li>
           <li><Link href={"#"}>Portfolio</Link></li>
-          <li><Link href={"#"}>Blog</Link></li>
           <li><Link href={"#"}>Career</Link></li>
           <li><Link href={"#"}>Team</Link></li>
           <li><Link className="link_btn" href={"#"}>Contact Us</Link></li>
-          <li><Link   href={"#"}>Login</Link></li>
+          {token && <li><Link  href={"/adminPanel"}>Admin Panel</Link></li>}
+          <li><Link   href="/login">Login</Link></li>
        </ul>
        {/* for desktop device */}
     </nav>

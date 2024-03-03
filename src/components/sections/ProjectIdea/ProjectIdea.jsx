@@ -5,10 +5,15 @@ export default function ProjectIdea() {
     <section className="project_idea">
       <div className="container">
         <div className="left">
-          <h2 className="heading">Have a Project Idea ?</h2>
+          <h2 className="project_idea_heading">Have a Project Idea ?</h2>
           <p className="para">
             We thrive on innovation and collaboration. Whether you're a startup
             with a groundbreaking concept or an established enterprise seeking
+            to enhance your digital presence, we're here to turn your vision
+            into reality. 
+            <br />
+            <br />
+            groundbreaking concept or an established enterprise seeking
             to enhance your digital presence, we're here to turn your vision
             into reality.
           </p>
