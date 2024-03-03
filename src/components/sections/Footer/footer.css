@@ -1,0 +1,101 @@
+.footer{
+    background-color: #0c0d12;
+    padding-top: 150px;
+}
+.footer .footer_menu{
+    color: #ffffff;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.footer .footer_menu .footer_des{
+    color: #aeaeaf;
+    padding-top: 20px;
+}
+.footer .contact_btn{
+    border: none;
+    background: -webkit-linear-gradient(90deg, #89c540 0%, #09643f 100%);
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: white;
+    border-radius: 30px;
+}
+.footer .footer_sub_menu{
+    display: flex;
+    justify-content: space-between;
+}
+.footer .footer_sub_menu a{
+    text-decoration: none;
+    display: block;
+    padding: 5px;
+    color: #aeaeaf;
+}
+.footer .divider{
+    border-bottom: 1px solid #aeaeaf;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+.footer .sponsor_menu{
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    gap: 20px;
+    margin-bottom: 20px;
+}
+.footer .sponsor_link{
+    background-color: #aeaeaf;
+    padding: 5px 10px;
+    border-radius: 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer .footer_bottom{
+    color: #aeaeaf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 10px;
+}
+.footer .footer_bottom_right{
+    display: flex;
+    gap: 10px;
+}
+.footer .social_link{
+    border: 1px solid #aeaeaf;
+    padding: 5px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding-top: 80px;
+      }
+      .footer .footer_menu {
+        grid-template-columns: 1fr;
+    }
+    .footer .contact_btn{
+        padding: 10px 20px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: white;
+        border-radius: 30px;
+    }
+    .footer .footer_sub_menu{
+        flex-direction: column;
+    }
+    .footer .sponsor_menu{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .footer .footer_bottom{
+        flex-direction: column-reverse;
+    }
+  }
+
+  @media (min-width: 768px) and (max-width: 991px){
+    .footer {
+        padding-top: 120px;
+      }
+  }
