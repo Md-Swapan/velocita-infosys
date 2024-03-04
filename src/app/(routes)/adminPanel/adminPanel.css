@@ -31,3 +31,17 @@
   justify-content: end;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
+
+
+.job_view_details_container{
+  color: aliceblue;
+}
+
+@media screen and (max-width: 768px) {
+  .sidebar {
+    height: 0vh;
+    background-color:  #0b0e09;
+    padding: 40px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  }
+}

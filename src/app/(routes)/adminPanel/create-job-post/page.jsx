@@ -5,8 +5,7 @@ import { CKEditor } from "@ckeditor/ckeditor5-react";
 import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
 import { baseURL } from "@/assets/baseURL/baseURL";
 import axios from "axios";
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
+import { useRouter } from "next/navigation";
 
 const page = () => {
   const [checked, setChecked] = React.useState(false);
@@ -41,7 +40,7 @@ const page = () => {
     setJobData({...jobData, visible: `${e.target.checked}`});
   };
 
-
+  const router = useRouter();
   const handleSubmit = async (e) => {
 
     e.preventDefault();
@@ -49,7 +48,9 @@ const page = () => {
     try {
       const url = baseURL + "api/v1/career";
       await axios.post(url, jobData).then((res) => {
-        console.log(res);
+        if(res.data.success == true){
+          router.push("/adminPanel");
+        }
       });
 
     } catch (error) {

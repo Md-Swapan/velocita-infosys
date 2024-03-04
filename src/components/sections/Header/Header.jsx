@@ -23,10 +23,7 @@ const Header = () => {
             <br />
             
             <p>
-              As a leading IT consulting firm, we help businesses to reinvent
-              andexcel by establishing complete relianceon information
-              technology andoffering high quality technology consulting
-              services.
+            Velocita Infosys Limited is dedicated to providing top-tier services that drive businesses forward in the dynamic digital landscape. Through innovation, reliability, and customer-centricity, we pave the path to success, ensuring growth with every endeavor.
             </p>
             <button className="get_start_btn me-2 mt-4">Get Start</button>
             <button className="get_start_btn outlined_btn">
