@@ -1,7 +1,7 @@
 import logo from "../../../assets/images/Velocita-logo1 1.png";
 import Image from "next/image";
-import "./adminPanel.css"
-
+import "./adminPanel.css";
+import Link from "next/link";
 
 export const metadata = {
   title: "Velocita Infosys Admin Panel",
@@ -19,8 +19,15 @@ export default function AdminLayout({ children }) {
               <div className="sidebar">
                 <Image width={200} src={logo} />
                 <ul>
-                  <li>Create job post</li>
-                  <li>View job post</li>
+                  <Link href={"/adminPanel"}>
+                    <li>All jobs</li>
+                  </Link>
+                  <Link href={"/adminPanel/create-job-post"}>
+                    <li>Create job post</li>
+                  </Link>
+                  <Link href={"/"}>
+                    <li>Back to Home</li>
+                  </Link>
                 </ul>
               </div>
             </div>
@@ -29,7 +36,7 @@ export default function AdminLayout({ children }) {
                 <div className="admin_header">
                   <h4>Admin</h4>
                 </div>
-                <div>{children}</div>
+                <div className="admin_panel_children">{children}</div>
               </div>
             </div>
           </div>
