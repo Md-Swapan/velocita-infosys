@@ -16,6 +16,8 @@ nav.velocita_nav ul li {
   list-style: none;
   display: flex;
   align-items: center;
+  color: white;
+  cursor: pointer;
 }
 .menu_icon{  
   -webkit-filter: grayscale(1) invert(1);
