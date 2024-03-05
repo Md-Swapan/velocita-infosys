@@ -1,0 +1,15 @@
+.job_view_details_container{
+  color: rgba(180, 180, 180, 0.952);
+}
+.job_view_details_container h4{
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  margin-bottom: 14px;
+  /* border-bottom: 1px solid gainsboro; */
+}
+
+.job_view_details_content_container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 100px;
+}

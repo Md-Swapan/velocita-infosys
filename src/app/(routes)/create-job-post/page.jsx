@@ -21,6 +21,7 @@ const page = () => {
     additional_requirements: "",
     responsibilities: "",
     compensation_benefits: "",
+    job_type: "",
     date_posted: `${datePosted}`,
     application_deadline: `${applicationDeadline}`,
     email: "",
@@ -30,7 +31,7 @@ const page = () => {
   });
   
 
-  console.log(datePosted);
+  // console.log(datePosted);
 
   const handleChange = ({ currentTarget: input }) => {
     setJobData({ ...jobData, [input.name]: input.value });
@@ -49,7 +50,7 @@ const page = () => {
       const url = baseURL + "api/v1/career";
       await axios.post(url, jobData).then((res) => {
         if(res.data.success == true){
-          router.push("/adminPanel");
+          router.push("/career");
         }
       });
 
@@ -68,7 +69,7 @@ const page = () => {
 
 
   return (
-    <div className="create_job_post_section">
+    <div className="create_job_post_section container">
       <div className="create_job_post_container">
         <div className="create_job_form">
           <form onSubmit={handleSubmit}>
@@ -162,18 +163,16 @@ const page = () => {
               <div className="general_information_input_container">
                 <input
                   type="text"
+                  placeholder="Job Type"
+                  name="job_type"
+                  onChange={handleChange}
+                />
+                <input
+                  type="text"
                   placeholder="Date Of Posted"
                   name="date_posted"
                   onChange={handleChange}
                 />
-                 {/* <div>
-                  <label htmlFor="">Date Of Posted</label>
-                 <DatePicker selected={datePosted} onChange={(date) => setDatePosted(date)} />
-                 </div>
-                 <div>
-                  <label htmlFor="">Application Deadline</label>
-                 <DatePicker selected={applicationDeadline} onChange={(date) => setApplicationDeadline(date)} />
-                 </div> */}
                  
                 <input
                   type="text"
@@ -209,7 +208,7 @@ const page = () => {
                 <span htmlFor="">Visible</span>
               </div>
             <button type="submit" className="create_job_submit_btn">
-              Submit
+              Post Job
             </button>
             </div>
 

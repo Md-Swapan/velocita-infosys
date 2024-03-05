@@ -33,9 +33,6 @@
 }
 
 
-.job_view_details_container{
-  color: aliceblue;
-}
 
 @media screen and (max-width: 768px) {
   .sidebar {

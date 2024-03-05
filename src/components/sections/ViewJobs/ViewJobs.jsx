@@ -17,11 +17,11 @@ const ViewJobs = () => {
   }, []);
 
   const detailsViewHandler = (data) => {
-    router.push(`/adminPanel/${data.job_code}`);
+    router.push(`/career/${data.job_code}`);
   };
 
   return (
-    <div className="view_jobs_section_container">
+    <div className="view_jobs_section_container mt-5">
       <div className="view_jobs_content">
         <table>
           <thead>

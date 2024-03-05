@@ -1,5 +1,5 @@
 "use client";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import logo from "../../../assets/images/Velocita-logo1 1.png";
 import Image from "next/image";
 import "./login.css";
@@ -9,6 +9,7 @@ import axios from "axios";
 import { useRouter } from "next/navigation";
 
 const page = () => {
+  const token = localStorage.getItem("token");
   const [data, setData] = useState({
     email: "",
     password: "",
@@ -29,7 +30,9 @@ const page = () => {
       await axios.post(url, data).then((res) => {
         if (res.data.success == true) {
           localStorage.setItem("token", res.data.data.token);
-          router.push("/");
+          setTimeout(() => {
+            router.push("/");
+          });
         }
       });
     } catch (error) {
@@ -43,37 +46,47 @@ const page = () => {
     }
   };
 
+  useEffect(() => {
+    if (token) {
+      router.push("/");
+    }
+  }, []);
+
   return (
-    <div className="login_section">
-      <div className="login_container">
-        <Image width={300} src={logo} alt="logo" />
-        <div className="login_form">
-          <h2>Login</h2>
-          <form onSubmit={handleSubmit}>
-            <input
-              type="email"
-              placeholder="Email"
-              name="email"
-              onChange={handleChange}
-              required
-            />
-            <input
-              type="password"
-              placeholder="Password"
-              name="password"
-              onChange={handleChange}
-              required
-            />
+    <>
+      {!token && (
+        <div className="login_section">
+          <div className="login_container">
+            <Image width={300} src={logo} alt="logo" />
+            <div className="login_form">
+              <h2>Login</h2>
+              <form onSubmit={handleSubmit}>
+                <input
+                  type="email"
+                  placeholder="Email"
+                  name="email"
+                  onChange={handleChange}
+                  required
+                />
+                <input
+                  type="password"
+                  placeholder="Password"
+                  name="password"
+                  onChange={handleChange}
+                  required
+                />
 
-            <button type="submit">Login</button>
-          </form>
+                <button type="submit">Login</button>
+              </form>
+            </div>
+
+            <Link href="/">
+              <button>Back To Home</button>
+            </Link>
+          </div>
         </div>
-
-        <Link href="/">
-          <button>Back To Home</button>
-        </Link>
-      </div>
-    </div>
+      )}
+    </>
   );
 };
 

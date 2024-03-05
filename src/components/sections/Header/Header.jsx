@@ -34,12 +34,12 @@ const Header = () => {
         <div className="col-lg-6 d-flex  align-content-center justify-content-center justify-content-lg-end">
           <div className="position-relative">
             <Image src={BannerImage} className="banner_main_image" />
-            <Image className="bubble_one" src={BubbleImageOne} width={55} />
+            <Image className="bubble_one" src={BubbleImageOne} width={65} />
             <Image className="bubble_two" src={BubbleImageTwo} width={55} />
-            <Image className="bubble_three" src={BubbleImageThree} width={55} />
-            <Image className="bubble_four" src={BubbleImageFour} width={55} />
-            <Image className="bubble_five" src={BubbleImageFive} width={55} />
-            <Image className="bubble_six" src={BubbleImageSix} width={55} />
+            <Image className="bubble_three" src={BubbleImageThree} width={65} />
+            <Image className="bubble_four" src={BubbleImageFour} width={65} />
+            <Image className="bubble_five" src={BubbleImageFive} width={65} />
+            <Image className="bubble_six" src={BubbleImageSix} width={70} />
             <Image className="bubble_seven" src={BubbleImageSeven} width={55} />
           </div>
         </div>
