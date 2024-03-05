@@ -43,7 +43,7 @@ get_start_btn.banner_content h1{
 .bubble_one {
     position: absolute;
     left: 0;
-    top: 50%;
+    top: 45%;
 }
 
 .bubble_two {
@@ -59,21 +59,21 @@ get_start_btn.banner_content h1{
 .bubble_four {
     position: absolute;
     left: 15%;
-    bottom: 0%;
+    bottom: 13%;
 }
 .bubble_five {
     position: absolute;
-    left: 15%;
+    left: 10%;
     top: 10%;
 }
 .bubble_six {
     position: absolute;
     left: 50%;
-    bottom: 0%;
+    bottom: 7%;
 }
 .bubble_seven {
     position: absolute;
-    right: 5%;
+    right: 0%;
     top: 30%;
 }
 

@@ -13,15 +13,12 @@ export default function AdminLayout({ children }) {
   return (
     <>
       <div className="admin_panel_container">
-        <div className="container-fluid">
-          <div className="row">
-            <div className="col-md-2 p-0">
+        <div className="container">
+          {/* <div className="row"> */}
+          {/* <div className="col-md-2 p-0">
               <div className="sidebar">
                 <Image width={200} src={logo} />
                 <ul>
-                  <Link href={"/adminPanel"}>
-                    <li>All jobs</li>
-                  </Link>
                   <Link href={"/adminPanel/create-job-post"}>
                     <li>Create job post</li>
                   </Link>
@@ -30,17 +27,17 @@ export default function AdminLayout({ children }) {
                   </Link>
                 </ul>
               </div>
-            </div>
-            <div className="col-md-10 p-0">
-              <div className="admin_panel_body">
-                <div className="admin_header">
+            </div> */}
+          {/* <div className="col-md-10 p-0"> */}
+          <div className="admin_panel_body">
+            {/* <div className="admin_header">
                   <h4>Admin</h4>
-                </div>
-                <div className="admin_panel_children">{children}</div>
-              </div>
-            </div>
+                </div> */}
+            <div className="admin_panel_children">{children}</div>
           </div>
+          {/* </div> */}
         </div>
+        {/* </div> */}
       </div>
     </>
   );

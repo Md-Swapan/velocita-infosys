@@ -1,10 +1,14 @@
-import ViewJobs from "@/components/sections/ViewJobs/ViewJobs";
-import React from "react";
+"use client"
+import React, { useEffect } from "react";
+import { useRouter } from "next/navigation";
 
 const page = () => {
-  return <div className="admin_panel">
-    <ViewJobs/>
-  </div>;
+  const router = useRouter();
+
+  useEffect(() => {
+    router.push(`/adminPanel/create-job-post`);
+  }, [])
+  return <div className="admin_panel"></div>;
 };
 
 export default page;

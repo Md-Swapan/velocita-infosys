@@ -5,15 +5,28 @@ import Logo from "/public/logo.png";
 import Image from "next/image";
 import MenuIcon from "/public/menu.png";
 import CloseIcon from "/public/close.png";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { useRouter, usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState(false);
-  
-  const token = localStorage.getItem("token");
+  const router = useRouter();
+  const [token, setToken] = useState(null);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    setToken(token);
+  }, [pathname]);
+
+
   const LogoutHandler = () => {
     localStorage.removeItem("token");
-    window.location.reload();
+    setToken(null);
+
+    setTimeout(() => {
+      router.push("/login");
+    });
   };
 
 
@@ -37,22 +50,19 @@ const Navbar = () => {
           src={CloseIcon}
         />
         <p>
-          <Link href={"#"}>Home</Link>
-        </p>
-        <p>
-          <Link href={"#"}>Services</Link>
+          <Link href={"/"}>Home</Link>
         </p>
         <p>
           <Link href={"#"}>About Us</Link>
         </p>
         <p>
+          <Link href={"#"}>Services</Link>
+        </p>
+        <p>
           <Link href={"#"}>Portfolio</Link>
         </p>
         <p>
-          <Link href={"#"}>Career</Link>
-        </p>
-        <p>
-          <Link href={"#"}>Team</Link>
+          <Link href={"/career"}>Career</Link>
         </p>
         <p>
           <Link className="mobile_link_btn" href={"#"}>
@@ -61,7 +71,7 @@ const Navbar = () => {
         </p>
         {token && (
           <p>
-            <Link href={"/adminPanel"}>Admin Panel</Link>
+            <Link href={"/create-job-post"}>Create Job Post</Link>
           </p>
         )}
         {token ? (
@@ -77,38 +87,43 @@ const Navbar = () => {
       {/* for desktop device */}
       <ul className="d-none d-md-flex">
         <li>
-          <Link href={"#"}>Home</Link>
+          <Link href={"/"}>Home</Link>
+        </li>
+
+        <li>
+          <Link href={"#"}>About Us</Link>
         </li>
         <li>
           <Link href={"#"}>Services</Link>
         </li>
         <li>
-          <Link href={"#"}>About Us</Link>
-        </li>
-        <li>
           <Link href={"#"}>Portfolio</Link>
         </li>
+
         <li>
-          <Link href={"#"}>Career</Link>
-        </li>
-        <li>
-          <Link href={"#"}>Team</Link>
+          <Link href={"/career"}>Career</Link>
         </li>
         <li>
           <Link className="link_btn" href={"#"}>
             Contact Us
           </Link>
         </li>
-        {token && (
+        {token ? (
           <li>
-            <Link href={"/adminPanel"}>Admin Panel</Link>
+            <Link className="link_btn" href={"/create-job-post"}>
+              Create Job Post
+            </Link>
           </li>
+        ) : (
+          ""
         )}
         {token ? (
           <li onClick={LogoutHandler}>Logout</li>
         ) : (
           <li>
-            <Link href="/login">Login</Link>
+            <Link className="link_btn" href="/login">
+              Login
+            </Link>
           </li>
         )}
       </ul>

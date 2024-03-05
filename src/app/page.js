@@ -13,14 +13,14 @@ import ClientReview from "@/components/sections/ClientReview/ClientReview";
 export default function Home() {
   return (
     <main className={styles.main}>
-      <Navbar />
+      {/* <Navbar /> */}
       <Header />
       <Experience />
       <ExploreUs />
       <Services />
       <ClientReview/>
       <ProjectIdea />
-      <Footer />
+      {/* <Footer /> */}
     </main>
   );
 }
