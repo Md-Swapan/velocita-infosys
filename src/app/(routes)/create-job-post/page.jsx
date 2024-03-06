@@ -29,7 +29,6 @@ const page = () => {
     location: "",
     visible: `${checked}`,
   });
-  
 
   // console.log(datePosted);
 
@@ -38,24 +37,24 @@ const page = () => {
   };
 
   const handleCheckChange = (e) => {
-    setJobData({...jobData, visible: `${e.target.checked}`});
+    setJobData({ ...jobData, visible: `${e.target.checked}` });
   };
 
   const router = useRouter();
   const handleSubmit = async (e) => {
-
     e.preventDefault();
 
     try {
       const url = baseURL + "api/v1/career";
-      await axios.post(url, jobData).then((res) => {
-        if(res.data.success == true){
+      const token = localStorage.getItem("token");
+      const config = { headers: { "Content-Type": "application/json", Authorization: "Bearer " + token} };
+
+      await axios.post(url, jobData, config).then((res) => {
+        if (res.data.success == true) {
           router.push("/career");
         }
       });
-
     } catch (error) {
-
       if (
         error.response &&
         error.response.status >= 400 &&
@@ -63,10 +62,8 @@ const page = () => {
       ) {
         setError(error.response.data.message);
       }
-
     }
   };
-
 
   return (
     <div className="create_job_post_section container">
@@ -173,7 +170,7 @@ const page = () => {
                   name="date_posted"
                   onChange={handleChange}
                 />
-                 
+
                 <input
                   type="text"
                   placeholder="Application Deadline"
@@ -207,11 +204,10 @@ const page = () => {
                 />
                 <span htmlFor="">Visible</span>
               </div>
-            <button type="submit" className="create_job_submit_btn">
-              Post Job
-            </button>
+              <button type="submit" className="create_job_submit_btn">
+                Post Job
+              </button>
             </div>
-
           </form>
         </div>
       </div>

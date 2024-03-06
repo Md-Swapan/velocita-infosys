@@ -31,12 +31,12 @@ const ViewJobs = () => {
             <th>Experience</th>
             <th>Deadline</th>
           </thead>
-          {allJob.map((data) => (
+          {allJob?.map((data) => (
             <tr onClick={(e) => detailsViewHandler(data)}>
-              <td data-label="No">{data.id}</td>
-              <td data-label="Post">{data.job_title}</td>
-              <td data-label="Department">{data.department}</td>
-              <td data-label="Experience">{data.experience}</td>
+              <td data-label="No">{data?.id}</td>
+              <td data-label="Post">{data?.job_title}</td>
+              <td data-label="Department">{data?.department}</td>
+              <td data-label="Experience">{data?.experience}</td>
               <td data-label="Application Deadline">
                 {data.application_deadline}
               </td>
