@@ -1,20 +1,28 @@
-"use client";
-import { baseURL } from "@/assets/baseURL/baseURL";
-import axios from "axios";
-import { useParams } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import { baseURL } from "@/assets/baseURL/baseURL"
 import "@/app/(routes)/career/career.css"
 
-const page = () => {
-  const [singleJob, setSingleJob] = useState([]);
-  const { job_code } = useParams();
+export async function generateStaticParams() {
+  const posts = await fetch(baseURL + "api/v1/career/get-all").then((res) =>
+    res.json()
+  )
 
-  useEffect(() => {
-    axios
-      .get(baseURL + `api/v1/career/get-single/${job_code}`)
-      .then((res) => setSingleJob(res.data.data));
-  }, [job_code]);
+  return posts?.data?.map((post) => ({
+    job_code: post.job_code,
+  }))
+}
 
+export async function getJobPost(job_code) {
+  let data = await fetch(baseURL + `api/v1/career/get-single/${job_code}`).then(
+    (res) => {
+      return res.json()
+    }
+  )
+  return data?.data
+}
+
+const page = async ({ params }) => {
+  const { job_code } = params
+  const singleJob = await getJobPost(job_code)
   return (
     <div className="job_view_details_container container py-5">
       {singleJob.map((item) => (
@@ -135,7 +143,7 @@ const page = () => {
         </div>
       ))}
     </div>
-  );
-};
+  )
+}
 
-export default page;
+export default page

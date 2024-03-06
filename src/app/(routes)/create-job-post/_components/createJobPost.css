@@ -1,24 +1,24 @@
-.create_job_post_container{
+.create_job_post_container {
   /* overflow-y: scroll; */
 }
-.create_job_form{
-  padding:  40px 0px;
+.create_job_form {
+  padding: 40px 0px;
 }
 .create_job_form form {
   display: grid;
   /* grid-template-columns: repeat(2, 1fr); */
-  grid-gap:  20px;
+  grid-gap: 20px;
 }
-.create_job_form form h4{
+.create_job_form form h4 {
   color: rgb(235, 235, 235);
   /* background-color: #09643f; */
-  background: linear-gradient(180deg,  #09643f 0%,  #89c540 100%);
+  background: linear-gradient(180deg, #09643f 0%, #89c540 100%);
   border: 1px solid rgb(121, 121, 121);
   padding: 20px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.create_job_form form input{
+.create_job_form form input {
   width: 100%;
   /* margin-bottom: 10px; */
   margin-top: 10px;
@@ -28,10 +28,10 @@
   background: transparent;
   padding: 10px 0px;
   font-size: 15px;
-  
 }
 
-.job_overview_input_container, .general_information_input_container{
+.job_overview_input_container,
+.general_information_input_container {
   padding: 20px 30px;
   border: 1px solid rgb(121, 121, 121);
   border-top: none;
@@ -42,49 +42,43 @@
   background: white;
 }
 
-.create_job_submit_btn{
+.create_job_submit_btn {
   width: 250px;
-  margin-top: 20px ;
+  margin-top: 20px;
   padding: 15px;
-  background:linear-gradient(180deg, #09643f 0%, #89c540 100%);
+  background: linear-gradient(180deg, #09643f 0%, #89c540 100%);
   color: white;
   border: none;
   border-radius: 10px;
 }
-.create_job_submit_btn:hover{
-  background:linear-gradient(180deg, #89c540 0%, #09643f 100%);
-  
+.create_job_submit_btn:hover {
+  background: linear-gradient(180deg, #89c540 0%, #09643f 100%);
 }
 
-
-.visible_checkbox{
+.visible_checkbox {
   display: flex;
   color: aliceblue;
   font-size: 20px;
   margin-top: 20px;
   text-align: left;
 }
-.visible_checkbox input{
+.visible_checkbox input {
   width: 20px !important;
   height: 30px;
   padding: 10px;
   cursor: pointer;
-} 
-.visible_checkbox span{
+}
+.visible_checkbox span {
   margin: 10px;
-
-} 
-
+}
 
 @media screen and (max-width: 768px) {
-  .create_job_form{
-    padding:  0px;
-
+  .create_job_form {
+    padding: 0px;
   }
   .create_job_form form {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 40px 0px;
   }
-  
 }

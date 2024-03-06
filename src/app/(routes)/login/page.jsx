@@ -1,56 +1,57 @@
-"use client";
-import React, { useEffect, useState } from "react";
-import logo from "../../../assets/images/Velocita-logo1 1.png";
-import Image from "next/image";
-import "./login.css";
-import Link from "next/link";
-import { baseURL } from "@/assets/baseURL/baseURL";
-import axios from "axios";
-import { useRouter } from "next/navigation";
+"use client"
+import React, { useEffect, useState } from "react"
+import logo from "../../../assets/images/Velocita-logo1 1.png"
+import Image from "next/image"
+import "./login.css"
+import Link from "next/link"
+import { baseURL } from "@/assets/baseURL/baseURL"
+import axios from "axios"
+import { useRouter } from "next/navigation"
 
 const page = () => {
-  const token = localStorage.getItem("token");
+  const token =
+    typeof window !== "undefined" ? localStorage.getItem("token") : null
   const [data, setData] = useState({
     email: "",
     password: "",
-  });
+  })
 
   const handleChange = ({ currentTarget: input }) => {
-    setData({ ...data, [input.name]: input.value });
-  };
+    setData({ ...data, [input.name]: input.value })
+  }
 
-  const router = useRouter();
+  const router = useRouter()
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     try {
-      const url = baseURL + "api/v1/auth/admin-login";
+      const url = baseURL + "api/v1/auth/admin-login"
 
       await axios.post(url, data).then((res) => {
         if (res.data.success == true) {
-          localStorage.setItem("token", res.data.data.token);
+          localStorage.setItem("token", res.data.data.token)
           setTimeout(() => {
-            router.push("/");
-          });
+            router.push("/")
+          })
         }
-      });
+      })
     } catch (error) {
       if (
         error.response &&
         error.response.status >= 400 &&
         error.response.status <= 500
       ) {
-        setError(error.response.data.message);
+        setError(error.response.data.message)
       }
     }
-  };
+  }
 
   useEffect(() => {
     if (token) {
-      router.push("/");
+      router.push("/")
     }
-  }, []);
+  }, [])
 
   return (
     <>
@@ -87,7 +88,7 @@ const page = () => {
         </div>
       )}
     </>
-  );
-};
+  )
+}
 
-export default page;
+export default page
