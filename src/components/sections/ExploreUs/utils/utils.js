@@ -28,37 +28,37 @@ export const internationalCallcenterData=[
     },
     {
         id: 2,
-        image: '/slider/slider2.jpg'
+        image: '/slider/slider6.jpg'
     },
     {
         id: 3,
-        image: '/slider/slider3.jpg'
+        image: '/slider/slider7.jpg'
     },
     {
         id: 4,
-        image: '/slider/slider4.jpg'
+        image: '/slider/slider10.jpg'
     },
     {
         id: 5,
-        image: '/slider/slider5.jpg'
+        image: '/slider/slider12.jpg'
     },
 ];
 export const softWareDevelopmentSliderData=[
     {
         id: 1,
-        image: '/slider/slider6.jpg'
+        image: '/slider/slider1.jpg'
     },
     {
         id: 2,
-        image: '/slider/slider7.jpg'
+        image: '/slider/slider5.jpg'
     },
     {
         id: 3,
-        image: '/slider/slider8.jpg'
+        image: '/slider/slider6.jpg'
     },
     {
         id: 4,
-        image: '/slider/slider9.jpg'
+        image: '/slider/slider7.jpg'
     },
     {
         id: 5,
@@ -69,7 +69,7 @@ export const softWareDevelopmentSliderData=[
 export const digitalMarketingSliderData=[
     {
         id: 1,
-        image: '/slider/slider11.jpg'
+        image: '/slider/slider1.jpg'
     },
     {
         id: 2,
@@ -77,11 +77,11 @@ export const digitalMarketingSliderData=[
     },
     {
         id: 3,
-        image: '/slider/slider3.jpg'
+        image: '/slider/slider6.jpg'
     },
     {
         id: 4,
-        image: '/slider/slider4.jpg'
+        image: '/slider/slider10.jpg'
     },
     {
         id: 5,

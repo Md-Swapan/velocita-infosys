@@ -1,4 +1,5 @@
-import React from "react";
+"use client";
+import React, { useEffect, useState } from "react";
 import "./footer.css";
 import Image from "next/image";
 import Logo from "/public/logo.png";
@@ -13,8 +14,26 @@ import youtubeLogo from "../../../../public/footer/youtubeLogo.png";
 import instagramLogo from "../../../../public/footer/instagram.png";
 import twitterLogo from "../../../../public/footer/twitter.png";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 
 const Footer = () => {
+  const [token, setToken] = useState(null);
+  const pathname = usePathname();
+
+  useEffect(() => {
+    const token = localStorage.getItem("token");
+    setToken(token);
+  }, [pathname]);
+
+  const LogoutHandler = () => {
+    localStorage.removeItem("token");
+    setToken(null);
+
+    setTimeout(() => {
+      router.push("/login");
+    });
+  };
+
   const year = new Date().getFullYear();
   return (
     <div className="footer">
@@ -39,6 +58,22 @@ const Footer = () => {
             <Link href="">Portfolio</Link>
             <Link href="">Blog</Link>
             <Link href="">Career</Link>
+            {token ? (
+              <Link className="link_btn" href={"/createjobpost"}>
+                Create Job Post
+              </Link>
+            ) : (
+              ""
+            )}
+            {token ? (
+              <Link href={""} onClick={LogoutHandler}>
+                Logout
+              </Link>
+            ) : (
+              <Link className="link_btn" href="/login">
+                Admin Login
+              </Link>
+            )}
           </div>
           <div>
             <h4>Services</h4>

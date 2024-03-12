@@ -1,24 +1,23 @@
-"use client";
 import { baseURL } from "@/assets/baseURL/baseURL";
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import "./viewJobs.css";
-import { useRouter } from "next/navigation";
+import Link from "next/link";
 
-const ViewJobs = () => {
-  const [allJob, setAllJob] = useState([]);
-  
-  const router = useRouter();
+async function getAllJobs() {
+  const posts = await fetch(baseURL + "api/v1/career/get-all", {
+    next: { revalidate: 1 },
+ 
+  });
+  return posts.json();
+}
 
-  useEffect(() => {
-    axios
-      .get(baseURL + `api/v1/career/get-all`)
-      .then((res) => setAllJob(res.data.data));
-  }, []);
+const ViewJobs = async () => {
+  const allJobs = await getAllJobs();
 
-  const detailsViewHandler = (data) => {
-    router.push(`/career/${data.job_code}`);
-  };
+  // console.log(allJobs);
+  // const detailsViewHandler = (data) => {
+  //   router.push(`/career/${data.job_code}`);
+  // };
 
   return (
     <div className="view_jobs_section_container mt-5">
@@ -30,15 +29,19 @@ const ViewJobs = () => {
             <th>Department</th>
             <th>Experience</th>
             <th>Deadline</th>
+            <th>Actions</th>
           </thead>
-          {allJob?.map((data) => (
-            <tr onClick={(e) => detailsViewHandler(data)}>
+          {allJobs?.data?.map((data) => (
+            <tr>
               <td data-label="No">{data?.id}</td>
               <td data-label="Post">{data?.job_title}</td>
               <td data-label="Department">{data?.department}</td>
               <td data-label="Experience">{data?.experience}</td>
               <td data-label="Application Deadline">
                 {data.application_deadline}
+              </td>
+              <td>
+                <Link className="job_view_btn" href={`/career/${data.job_code}`}>View</Link>
               </td>
             </tr>
           ))}

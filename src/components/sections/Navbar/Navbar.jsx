@@ -14,20 +14,21 @@ const Navbar = () => {
   const [token, setToken] = useState(null);
   const pathname = usePathname();
 
-  useEffect(() => {
-    const token = localStorage.getItem("token");
-    setToken(token);
-  }, [pathname]);
+  // useEffect(() => {
+  //   const token = localStorage.getItem("token");
+  //   setToken(token);
+
+  // }, [pathname]);
 
 
-  const LogoutHandler = () => {
-    localStorage.removeItem("token");
-    setToken(null);
+  // const LogoutHandler = () => {
+  //   localStorage.removeItem("token");
+  //   setToken(null);
 
-    setTimeout(() => {
-      router.push("/login");
-    });
-  };
+  //   setTimeout(() => {
+  //     router.push("/login");
+  //   });
+  // };
 
 
   return (
@@ -69,18 +70,18 @@ const Navbar = () => {
             Contact Us
           </Link>
         </p>
-        {token && (
+        {/* {token && (
           <p>
-            <Link href={"/create-job-post"}>Create Job Post</Link>
+            <Link href={"/createjobpost"}>Create Job Post</Link>
           </p>
-        )}
-        {token ? (
+        )} */}
+        {/* {token ? (
           <p onClick={LogoutHandler}>Logout</p>
         ) : (
           <p>
             <Link href="/login">Login</Link>
           </p>
-        )}
+        )} */}
       </div>
       {/* for mobile device  */}
 
@@ -108,16 +109,16 @@ const Navbar = () => {
             Contact Us
           </Link>
         </li>
-        {token ? (
+        {/* {token ? (
           <li>
-            <Link className="link_btn" href={"/create-job-post"}>
+            <Link className="link_btn" href={"/createjobpost"}>
               Create Job Post
             </Link>
           </li>
         ) : (
           ""
-        )}
-        {token ? (
+        )} */}
+        {/* {token ? (
           <li onClick={LogoutHandler}>Logout</li>
         ) : (
           <li>
@@ -125,7 +126,7 @@ const Navbar = () => {
               Login
             </Link>
           </li>
-        )}
+        )} */}
       </ul>
       {/* for desktop device */}
     </nav>
