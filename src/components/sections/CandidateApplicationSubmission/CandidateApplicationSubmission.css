@@ -1,0 +1,55 @@
+.candidate_application_submission_container {
+  background: rgba(107, 107, 107, 0.096);
+  padding: 20px;
+  margin-top: 40px;
+  border-radius: 10px;
+}
+
+.candidate_application_submission_container form {
+  margin-top: 30px;
+}
+.candidate_application_submission_container form input {
+  width: 100%;
+  margin-bottom: 30px;
+  padding: 10px 0px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(133, 133, 133, 0.356);
+  background: transparent;
+  font-size: 15px;
+  color: aliceblue;
+}
+.gridForm{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+}
+
+
+
+.year_of_experience_checkbox {
+  display: flex;
+  text-align: left;
+}
+.year_of_experience_checkbox input {
+  width: 20px !important;
+  height: 20px;
+  padding: 10px;
+  cursor: pointer;
+}
+.year_of_experience_checkbox span {
+  margin-left: 10px;
+}
+
+
+.candidate_application_submission_container form button{
+  margin-top: 20px;
+  padding: 15px 50px;
+  background: linear-gradient(180deg, #09643f 0%, #89c540 100%);
+  color: white;
+  border: none;
+  border-radius: 30px;
+}
+.candidate_application_submission_container form button:hover {
+  background: linear-gradient(180deg, #89c540 0%, #09643f 100%);
+}
