@@ -59,12 +59,20 @@ const Footer = () => {
             <Link href="">Blog</Link>
             <Link href="">Career</Link>
             {token ? (
+              <Link className="link_btn" href={"/adminPanel"}>
+                Admin Panel
+              </Link>
+            ) : (
+              ""
+            )}
+            {/* {token ? (
               <Link className="link_btn" href={"/createjobpost"}>
                 Create Job Post
               </Link>
             ) : (
               ""
-            )}
+            )} */}
+
             {token ? (
               <Link href={""} onClick={LogoutHandler}>
                 Logout

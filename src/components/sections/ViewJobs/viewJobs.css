@@ -1,29 +1,29 @@
-.view_jobs_content{
+.view_jobs_content {
   width: 100%;
   padding: 40px 0px;
   color: aliceblue;
 }
-.view_jobs_content table{
+.view_jobs_content table {
   width: 100%;
 }
-.view_jobs_content table thead{
-  background: linear-gradient(180deg,  #09643f 0%,  #89c540 100%);
-  
-  
+.view_jobs_content table thead {
+  background: linear-gradient(180deg, #09643f 0%, #89c540 100%);
 }
-.view_jobs_content table thead th{
+.view_jobs_content table thead th {
   padding: 15px 20px;
-  
 }
-.view_jobs_content table tr td{
+.view_jobs_content table tr td {
   padding: 12px 20px;
   background: #0964401c;
   border-bottom: 1px solid rgba(220, 220, 220, 0.336);
   /* cursor: pointer; */
 }
 
-.job_view_btn{
+.job_view_btn {
   text-decoration: none;
   color: aliceblue;
- cursor: pointer;
+  cursor: pointer;
+  border: 1px solid gainsboro;
+  border-radius: 5px;
+  padding: 5px;
 }

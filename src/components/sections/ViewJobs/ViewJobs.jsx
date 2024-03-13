@@ -3,10 +3,11 @@ import React from "react";
 import "./viewJobs.css";
 import Link from "next/link";
 
+
 async function getAllJobs() {
   const posts = await fetch(baseURL + "api/v1/career/get-all", {
     next: { revalidate: 1 },
- 
+    cache: "no-store",
   });
   return posts.json();
 }
@@ -41,7 +42,12 @@ const ViewJobs = async () => {
                 {data.application_deadline}
               </td>
               <td>
-                <Link className="job_view_btn" href={`/career/${data.job_code}`}>View</Link>
+                <Link
+                  className="job_view_btn"
+                  href={`/career/${data.job_code}`}
+                >
+                  View
+                </Link>
               </td>
             </tr>
           ))}

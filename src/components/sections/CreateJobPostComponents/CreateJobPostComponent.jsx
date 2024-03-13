@@ -57,7 +57,7 @@ export default function CreateJobPostComponent() {
 
       await axios.post(url, jobData, config).then((res) => {
         if (res.data.success == true) {
-          router.push("/career")
+          // router.push("/career")
         }
       })
     } catch (error) {
@@ -72,7 +72,7 @@ export default function CreateJobPostComponent() {
   }
 
   return (
-    <div className="create_job_post_section container">
+    <div className="create_job_post_section mx-5">
       <div className="create_job_post_container">
         <div className="create_job_form">
           <form onSubmit={handleSubmit}>

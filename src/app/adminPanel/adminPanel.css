@@ -1,19 +1,21 @@
 
 .sidebar {
-  height: 101vh;
+  height: 101%;
   background-color:  #0b0e09;
-  padding: 40px;
+  padding: 20px 40px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 .sidebar ul {
   margin-top: 40px;
+  padding-left: 0rem !important;
   list-style: none;
   font-size: 18px;
-  border-top: 1px solid green;
+  font-weight: 500;
+  border-top: 1px solid rgba(0, 128, 0, 0.342);
 }
 .sidebar ul li {
   margin-top: 20px;
-  font-weight: 600;
+  /* font-weight: 500; */
   color: rgb(187, 187, 187);
   cursor: pointer;
   text-decoration: none;
@@ -22,6 +24,10 @@
   text-decoration: none;
 }
 
+.admin_panel_body{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* overflow: scroll; */
+}
 .admin_header {
   width: 100%;
   padding: 30px;
@@ -29,7 +35,7 @@
   color: rgb(233, 233, 233);
   display: flex;
   justify-content: end;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  /* box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; */
 }
 
 

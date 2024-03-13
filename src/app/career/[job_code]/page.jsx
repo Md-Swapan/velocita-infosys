@@ -8,6 +8,7 @@ import CandidateApplicationSubmission from "@/components/sections/CandidateAppli
 export async function generateStaticParams() {
   const posts = await fetch(baseURL + "api/v1/career/get-all", {
     next: { revalidate: 1 },
+    cache: "no-store",
   }).then((res) => res.json());
 
   const _posts= posts?.data?.map((post) => ({
@@ -20,6 +21,7 @@ export async function generateStaticParams() {
 export async function getJobPost(job_code) {
   let data = await fetch(baseURL + `api/v1/career/get-single/${job_code}`, {
     next: { revalidate: 1 },
+    cache: "no-store",
   }).then((res) => {
     return res.json();
   });
