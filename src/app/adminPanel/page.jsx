@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 
 const page = () => {
@@ -8,7 +8,7 @@ const page = () => {
   useEffect(() => {
     router.push(`/adminPanel/createjobpost`);
   }, []);
-  return <div className="admin_panel"></div>;
+  return;
 };
 
 export default page;

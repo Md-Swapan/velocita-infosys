@@ -165,7 +165,7 @@ const page =  async({params}) => {
                 </li>
               </ul>
 
-              <CandidateApplicationSubmission />
+              <CandidateApplicationSubmission job_code={job_code}/>
             </div>
           </div>
         ))}
