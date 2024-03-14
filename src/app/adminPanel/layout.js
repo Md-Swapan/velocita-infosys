@@ -6,7 +6,6 @@ import { FaList } from "react-icons/fa";
 import { LuClipboardEdit } from "react-icons/lu";
 import { IoArrowBackSharp } from "react-icons/io5";
 
-
 export const metadata = {
   title: "Velocita Infosys Admin Panel",
   description:
@@ -16,29 +15,37 @@ export const metadata = {
 export default function AdminLayout({ children }) {
   return (
     <>
-      <div className="admin_panel">
+      <div className="admin_panel_layout">
         <div className="container-fluid admin_panel_container">
           <div className="row">
-            <div className="col-md-2 p-0">
-              <div className="sidebar">
-                <Image width={200} src={logo} />
-                <ul>
-                  <Link href={"/adminPanel/createjobpost"}>
-                    <li><FaList /> Job Application List</li>
-                  </Link>
-                  <Link href={"/adminPanel/createjobpost"}>
-                    <li><LuClipboardEdit /> Create job post</li>
-                  </Link>
-                  <Link href={"/"}>
-                    <li><IoArrowBackSharp /> Back to Home</li>
-                  </Link>
-                </ul>
+            <div className="col-md-2 p-0 ">
+              <div className="sidebar_container">
+                <div className="sidebar">
+                  <Image width={200} src={logo} />
+                  <ul>
+                    <Link href={"/adminPanel/createjobpost"}>
+                      <li>
+                        <FaList /> Job Application List
+                      </li>
+                    </Link>
+                    <Link href={"/adminPanel/createjobpost"}>
+                      <li>
+                        <LuClipboardEdit /> Create job post
+                      </li>
+                    </Link>
+                    <Link href={"/"}>
+                      <li>
+                        <IoArrowBackSharp /> Back to Home
+                      </li>
+                    </Link>
+                  </ul>
+                </div>
               </div>
             </div>
             <div className="col-md-10 p-0">
               <div className="admin_panel_body">
                 <div className="admin_header">
-                  <h4>Admin</h4>
+                  <h4>Admin Panel </h4>
                 </div>
                 <div className="admin_panel_children">{children}</div>
               </div>

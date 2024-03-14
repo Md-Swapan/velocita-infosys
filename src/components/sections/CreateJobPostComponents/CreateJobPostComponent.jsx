@@ -1,17 +1,18 @@
-import { useState } from "react"
-import "./createJobPost.css"
-import { CKEditor } from "@ckeditor/ckeditor5-react"
-import ClassicEditor from "@ckeditor/ckeditor5-build-classic"
-import { baseURL } from "@/assets/baseURL/baseURL"
-import axios from "axios"
-import { useRouter } from "next/navigation"
+import { useState } from "react";
+import "./createJobPost.css";
+import { CKEditor } from "@ckeditor/ckeditor5-react";
+import ClassicEditor from "@ckeditor/ckeditor5-build-classic";
+import { baseURL } from "@/assets/baseURL/baseURL";
+import axios from "axios";
+import { useRouter } from "next/navigation";
+import toast, { Toaster } from "react-hot-toast";
 
 export default function CreateJobPostComponent() {
-  const router = useRouter()
+  const router = useRouter();
 
-  const [checked, setChecked] = useState(false)
-  const [datePosted, setDatePosted] = useState(new Date())
-  const [applicationDeadline, setApplicationDeadline] = useState(new Date())
+  const [checked, setChecked] = useState(false);
+  const [datePosted, setDatePosted] = useState(new Date());
+  const [applicationDeadline, setApplicationDeadline] = useState(new Date());
   const [jobData, setJobData] = useState({
     job_code: "",
     job_title: "",
@@ -29,50 +30,53 @@ export default function CreateJobPostComponent() {
     phone_number: "",
     location: "",
     visible: `${checked}`,
-  })
+  });
 
   // console.log(datePosted);
 
   const handleChange = ({ currentTarget: input }) => {
-    setJobData({ ...jobData, [input.name]: input.value })
-  }
+    setJobData({ ...jobData, [input.name]: input.value });
+  };
 
   const handleCheckChange = (e) => {
-    setJobData({ ...jobData, visible: `${e.target.checked}` })
-  }
+    setJobData({ ...jobData, visible: `${e.target.checked}` });
+  };
 
   const handleSubmit = async (e) => {
-    e.preventDefault()
+    e.preventDefault();
 
     try {
-      const url = baseURL + "api/v1/career"
+      const url = baseURL + "api/v1/career";
       const token =
-        typeof window !== "undefined" ? localStorage.getItem("token") : null
+        typeof window !== "undefined" ? localStorage.getItem("token") : null;
       const config = {
         headers: {
           "Content-Type": "application/json",
           Authorization: "Bearer " + token,
         },
-      }
+      };
 
       await axios.post(url, jobData, config).then((res) => {
         if (res.data.success == true) {
-          // router.push("/career")
+          router.push("/career")
+          notify();
         }
-      })
+      });
     } catch (error) {
       if (
         error.response &&
         error.response.status >= 400 &&
         error.response.status <= 500
       ) {
-        setError(error.response.data.message)
+        setError(error.response.data.message);
       }
     }
-  }
+  };
+
+  const notify = () => toast.success("Job Create Successfully.");
 
   return (
-    <div className="create_job_post_section mx-5">
+    <div className="create_job_post_section ">
       <div className="create_job_post_container">
         <div className="create_job_form">
           <form onSubmit={handleSubmit}>
@@ -110,8 +114,8 @@ export default function CreateJobPostComponent() {
                     editor={ClassicEditor}
                     data="<p>Job Summary</p>"
                     onChange={(event, editor) => {
-                      const data = editor.getData()
-                      setJobData({ ...jobData, job_summary: data })
+                      const data = editor.getData();
+                      setJobData({ ...jobData, job_summary: data });
                     }}
                   />
                 </div>
@@ -121,8 +125,8 @@ export default function CreateJobPostComponent() {
                     editor={ClassicEditor}
                     data="<p>Requirements</p>"
                     onChange={(event, editor) => {
-                      const data = editor.getData()
-                      setJobData({ ...jobData, requirements: data })
+                      const data = editor.getData();
+                      setJobData({ ...jobData, requirements: data });
                     }}
                   />
                 </div>
@@ -132,8 +136,8 @@ export default function CreateJobPostComponent() {
                     editor={ClassicEditor}
                     data="<p>Additional Requirements</p>"
                     onChange={(event, editor) => {
-                      const data = editor.getData()
-                      setJobData({ ...jobData, additional_requirements: data })
+                      const data = editor.getData();
+                      setJobData({ ...jobData, additional_requirements: data });
                     }}
                   />
                 </div>
@@ -143,8 +147,8 @@ export default function CreateJobPostComponent() {
                     editor={ClassicEditor}
                     data="<p>Responsibilities</p>"
                     onChange={(event, editor) => {
-                      const data = editor.getData()
-                      setJobData({ ...jobData, responsibilities: data })
+                      const data = editor.getData();
+                      setJobData({ ...jobData, responsibilities: data });
                     }}
                   />
                 </div>
@@ -154,8 +158,8 @@ export default function CreateJobPostComponent() {
                     editor={ClassicEditor}
                     data="<p>Compensation Benefits</p>"
                     onChange={(event, editor) => {
-                      const data = editor.getData()
-                      setJobData({ ...jobData, compensation_benefits: data })
+                      const data = editor.getData();
+                      setJobData({ ...jobData, compensation_benefits: data });
                     }}
                   />
                 </div>
@@ -217,6 +221,7 @@ export default function CreateJobPostComponent() {
           </form>
         </div>
       </div>
+      <Toaster position="top-right" reverseOrder={false} />
     </div>
-  )
+  );
 }
