@@ -2,19 +2,18 @@
 import { baseURL } from "@/assets/baseURL/baseURL";
 import "@/app/career/career.css";
 import CandidateApplicationSubmission from "@/components/sections/CandidateApplicationSubmission/CandidateApplicationSubmission";
-// import { useParams } from "next/navigation";
-// import { useEffect, useState } from "react";
+
 
 export async function generateStaticParams() {
   const posts = await fetch(baseURL + "api/v1/career/get-all", {
     next: { revalidate: 1 },
     cache: "no-store",
+    fallback: 'blocking'
   }).then((res) => res.json());
 
   const _posts= posts?.data?.map((post) => ({
     job_code: post.job_code.toString(),
   }));
-  // console.log(_posts);
   return _posts;
 }
 
@@ -22,6 +21,7 @@ export async function getJobPost(job_code) {
   let data = await fetch(baseURL + `api/v1/career/get-single/${job_code}`, {
     next: { revalidate: 1 },
     cache: "no-store",
+    fallback: 'blocking'
   }).then((res) => {
     return res.json();
   });
@@ -30,22 +30,9 @@ export async function getJobPost(job_code) {
 
 
 const page =  async({params}) => {
-
-  // const params = useParams();
-  // const [singleJob, setSingleJob] = useState([]);
-
   const { job_code } = params;
   
-  
   const singleJob = await getJobPost(job_code);
-
-  // useEffect(() => {
-  //   async function fetchData() {
-  //     const _singleJob = await getJobPost(job_code);
-  //     setSingleJob(_singleJob);
-  //   }
-  //   fetchData();
-  // }, [job_code]);
 
   return (
     <div className="job_view_details_container container py-5">

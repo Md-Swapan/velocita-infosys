@@ -6,7 +6,7 @@ const page = () => {
   const router = useRouter();
 
   useEffect(() => {
-    router.push(`/adminPanel/createjobpost`);
+    router.push(`/adminPanel/job-application-list`);
   }, []);
   return;
 };

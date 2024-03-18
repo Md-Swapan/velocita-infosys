@@ -8,6 +8,7 @@ async function getAllJobs() {
   const posts = await fetch(baseURL + "api/v1/career/get-all", {
     next: { revalidate: 1 },
     cache: "no-store",
+    fallback: 'blocking'
   });
   return posts.json();
 }

@@ -1,0 +1,18 @@
+.job_application_list_container{
+  color: rgb(194, 194, 194);
+}
+.view_jobs_content table {
+  width: 100%;
+}
+.view_jobs_content table thead {
+  background:  #09643f ;
+}
+.view_jobs_content table thead th {
+  padding: 15px 20px;
+}
+.view_jobs_content table tr td {
+  padding: 12px 20px;
+  background: #0964401c;
+  border-bottom: 1px solid rgba(220, 220, 220, 0.336);
+  /* cursor: pointer; */
+}
