@@ -1,10 +1,5 @@
-import logo from "../../assets/images/Velocita-logo1 1.png";
-import Image from "next/image";
 import "./adminPanel.css";
-import Link from "next/link";
-import { FaList } from "react-icons/fa";
-import { LuClipboardEdit } from "react-icons/lu";
-import { IoArrowBackSharp } from "react-icons/io5";
+import AdminSidebar from "@/components/sections/AdminSidebar/AdminSidebar";
 
 export const metadata = {
   title: "Velocita Infosys Admin Panel",
@@ -18,26 +13,7 @@ export default function AdminLayout({ children }) {
       <div className="admin_panel_layout">
         <div className=" admin_panel_container ">
           <div className="sidebar_container ">
-            <div className="sidebar">
-              <Image width={200} src={logo} />
-              <ul>
-                <Link href={"/adminPanel/job-application-list"}>
-                  <li>
-                    <FaList /> Job Application List
-                  </li>
-                </Link>
-                <Link href={"/adminPanel/create-job-post"}>
-                  <li>
-                    <LuClipboardEdit /> Create job post
-                  </li>
-                </Link>
-                <Link href={"/"}>
-                  <li>
-                    <IoArrowBackSharp /> Back to Home
-                  </li>
-                </Link>
-              </ul>
-            </div>
+            <AdminSidebar/>
           </div>
           <div className="admin_panel_body">
             <div className="admin_header">
