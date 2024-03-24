@@ -29,7 +29,8 @@ export default async function page() {
   return (
     <div className="job_application_list_container m-5 p-5">
       <div className="view_jobs_section_container mt-5">
-        <div className="view_jobs_content">
+      <h2>Candidate Job Application List : </h2>
+        <div className="view_jobs_content mt-5">
           <table>
             <thead>
               <th>Job Code.</th>
