@@ -65,13 +65,6 @@ const Footer = () => {
             ) : (
               ""
             )}
-            {/* {token ? (
-              <Link className="link_btn" href={"/createjobpost"}>
-                Create Job Post
-              </Link>
-            ) : (
-              ""
-            )} */}
 
             {token ? (
               <Link href={""} onClick={LogoutHandler}>
@@ -82,6 +75,8 @@ const Footer = () => {
                 Admin Login
               </Link>
             )}
+
+            <Link href="/privacy-policy">Privacy Policy</Link>
           </div>
           <div>
             <h4>Services</h4>
