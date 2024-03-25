@@ -1,0 +1,22 @@
+.privacy_policy_section_page {
+  padding: 50px 0px;
+  color: #aeaeaf;
+}
+.privacy_policy_section_page h1 {
+  color: #bdbdbd;
+  font-weight: 700;
+}
+.privacy_policy_section_page ul {
+  padding: 0px;
+}
+.privacy_policy_section_page ul li {
+  margin: 20px 0px;
+  list-style: none;
+  font-size: 15px;
+  letter-spacing: .5px;
+}
+.privacy_policy_section_page ul li span {
+  font-size: 20px;
+  font-weight: 600;
+  color: #20c997;
+}

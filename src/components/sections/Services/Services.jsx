@@ -2,6 +2,7 @@ import React from "react"
 import "./services.css"
 import servicesData from "../../../assets/jsonData/servicesData.json"
 import ServiceCard from "@/components/sections/Services/_card/ServiceCard"
+
 export default function Services() {
   return (
     <section className="services_section">
