@@ -3,7 +3,7 @@
     {
       "id": 1,
       "image": "./Services/Software_And_Web_Development.png",
-      "title": "Software & Web Development",
+      "title": "Telesales (B2B and B2C)",
       "list": [
         "Web Development",
         "App Development",
@@ -11,12 +11,13 @@
         "QA",
         "Custom Software"
       ],
+      "dec": "Drive revenue and expand your customer base with our expert telesales solutions tailored to your business goals, whether targeting businesses or consumers.",
       "link": ""
     },
     {
       "id": 1,
       "image": "./Services/Digital_Marketing.png",
-      "title": "Digital Marketing",
+      "title": "Telemarketing",
       "list": [
         "SEO",
         "Email Marketing",
@@ -24,12 +25,13 @@
         "PPC Advertising",
         "Social Media Merketing"
       ],
+      "dec": "Engage prospects effectively and boost sales with our targeted telemarketing campaigns.",
       "link": ""
     },
     {
       "id": 1,
       "image": "./Services/Artificial_Intelligency.png",
-      "title": "Artificial Intelligency",
+      "title": "Lead Generation",
       "list": [
         "Machine Learning",
         "Computer Vision",
@@ -37,12 +39,13 @@
         "LLM",
         "NLP"
       ],
+      "dec": "Generate high-quality leads and accelerate your sales pipeline with our strategic lead generation services.",
       "link": ""
     },
     {
       "id": 1,
       "image": "./Services/DevOps.png",
-      "title": "DevOps",
+      "title": "Customer Support",
       "list": [
         "Containerization",
         "CI",
@@ -50,12 +53,13 @@
         "Infrastructure as Code",
         "Monitoring and Logging"
       ],
+      "dec": "Enhance customer satisfaction and loyalty with our responsive and efficient customer support solutions.",
       "link": ""
     },
     {
       "id": 1,
       "image": "./Services/Creative_Services.png",
-      "title": "Creative Services",
+      "title": "Back-Office Support",
       "list": [
         "SEO",
         "Email Marketing",
@@ -63,12 +67,13 @@
         "PPC Advertising",
         "Social Media Merketing"
       ],
+      "dec": "Streamline your operations and improve productivity with our reliable back-office support services.",
       "link": ""
     },
     {
       "id": 1,
       "image": "./Services/Hiring_And_Offshore.png",
-      "title": "Hiring and offshore",
+      "title": "Website, Software & App Development",
       "list": [
         "RPO Services",
         "Offshore Outsourcing",
@@ -76,6 +81,21 @@
         "Staff Augmentation",
         "KPO Services"
       ],
+      "dec": "Leverage our expertise in web development, software engineering, and app development to create customized solutions that meet your unique requirements.",
+      "link": ""
+    },
+    {
+      "id": 1,
+      "image": "./Services/Hiring_And_Offshore.png",
+      "title": "Digital Marketing",
+      "list": [
+        "RPO Services",
+        "Offshore Outsourcing",
+        "BPO Solutions",
+        "Staff Augmentation",
+        "KPO Services"
+      ],
+      "dec": "Expand your online presence and reach your target audience with our comprehensive digital marketing services, including SEO, PPC, social media marketing, and more.",
       "link": ""
     }
   ]

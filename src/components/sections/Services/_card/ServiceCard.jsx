@@ -11,13 +11,16 @@ export default function ServiceCard({ service }) {
         {/* heaidng */}
         <h2 className="heading">{service?.title}</h2>
         {/* features list */}
-        <ul className="list">
-          {service.list.map((item, index) => (
+        <div className="list">
+            <span className="list_item my-4">
+              {service?.dec}
+            </span>
+          {/* {service.list.map((item, index) => (
             <li key={index} className="list_item">
               {item}
             </li>
-          ))}
-        </ul>
+          ))} */}
+        </div>
         {/* button */}
         <a href={service?.link ? service?.link : "#"} className="link_btn">
           See More

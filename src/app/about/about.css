@@ -1,0 +1,32 @@
+.about_content{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  color: rgb(190, 190, 190);
+}
+.about_content h1{
+  font-weight: 700;
+  font-size: 50px;
+  letter-spacing: 1px;
+}
+
+.why_choose_us_container{
+  color: rgb(190, 190, 190);
+  padding: 50px 0px;
+}
+.why_choose_us_container h2{
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.why_choose_us_container ol li{
+  line-height: 1.9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .about_content{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    color: rgb(190, 190, 190);
+  }
+}
