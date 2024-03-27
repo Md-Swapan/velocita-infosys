@@ -1,3 +1,6 @@
+.about_section_page{
+  margin-top: 80px;
+}
 .about_content{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -13,13 +16,26 @@
 .why_choose_us_container{
   color: rgb(190, 190, 190);
   padding: 50px 0px;
+  margin-bottom: 50px;
+  /* text-align: center; */
 }
 .why_choose_us_container h2{
   font-weight: 700;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
+  font-size: 40px;
+}
+.why_choose_us_container ol{
+  text-align: left;
+  padding-left: 0;
 }
 .why_choose_us_container ol li{
-  line-height: 1.9rem;
+  line-height: 2.5rem;
+  list-style: none;
+}
+.why_choose_us_container ol li span{
+  font-size: 17px;
+  font-weight: 700;
+  color: #89c540;
 }
 
 @media screen and (max-width: 768px) {

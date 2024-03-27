@@ -3,7 +3,8 @@ import aboutImg from "@/assets/images/about.jpg";
 import missionImg from "@/assets/images/Missions.jpeg";
 import visionImg from "@/assets/images/vision.jpg";
 import "./about.css";
-import Services from "@/components/sections/Services/Services";
+
+
 const page = () => {
   return (
     <>
@@ -53,30 +54,30 @@ const page = () => {
           </div>
 
           <div className="why_choose_us_container">
-            <h2>Why Choose Us</h2>
+            <h2>Why Choose Us ...</h2>
             <ol>
               <li>
-                <span>Expertise:</span> Our team comprises skilled professionals
+                <span>Expertise: </span> Our team comprises skilled professionals
                 with expertise in various domains, ensuring top-notch solutions
                 tailored to meet your specific needs.
               </li>
               <li>
-                <span>Innovation:</span> We leverage the latest technologies and
+                <span>Innovation: </span> We leverage the latest technologies and
                 industry best practices to deliver innovative and efficient
                 solutions that give you a competitive edge.
               </li>
               <li>
-                <span>Customer-Centric Approach:</span> We prioritize customer
+                <span>Customer-Centric Approach: </span> We prioritize customer
                 satisfaction and are dedicated to delivering personalized
                 services that exceed expectations.
               </li>
               <li>
-                <span>Cost-Effective Solutions:</span> We offer cost-effective
+                <span>Cost-Effective Solutions: </span> We offer cost-effective
                 BPO solutions and IT services without compromising on quality,
                 helping you maximize your ROI.
               </li>
               <li>
-                <span>Reliable Partnership:</span> With Velocita Infosys
+                <span>Reliable Partnership: </span> With Velocita Infosys
                 Limited, you can trust us to be your reliable partner, providing
                 support and guidance every step of the way.
               </li>
@@ -84,7 +85,6 @@ const page = () => {
           </div>
 
         </div>
-          <Services />
       </div>
     </>
   );

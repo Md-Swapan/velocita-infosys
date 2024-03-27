@@ -9,7 +9,7 @@ export const metadata = {
     "",
 };
 
-export default function CareerLayout({ children }) {
+export default function PrivacyPolicyLayout({ children }) {
   return (
     <>
       <div className={inter.className}>

@@ -1,7 +1,7 @@
 .experience_section {
   background: #0b0e09;
   margin-top: 80px;
-  padding: 50px 0px;
+  padding: 50px 0px 100px 0px;
 }
 .experience_content_container {
   display: grid;
@@ -31,7 +31,7 @@
   color: white;
 }
 .real_solution_content_title{
-  margin-bottom: 20px;
+  margin: 40px 0px 20px 0px;
 }
 .real_solution_content_title .span1{
    color: white;

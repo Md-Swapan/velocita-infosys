@@ -1,5 +1,13 @@
+.navbar {
+  width: 100%;
+  position: fixed;
+  z-index: 9999999;
+  background-color: #020b13;
+  padding: 40px 0px;
+  top: 0;
+}
 nav.velocita_nav {
-  height: 60px;
+  /* height: 60px; */
   display: flex;
   align-items: center;
   justify-content: space-between;

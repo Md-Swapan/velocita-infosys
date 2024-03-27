@@ -2,7 +2,7 @@
   "data": [
     {
       "id": 1,
-      "image": "./Services/Software_And_Web_Development.png",
+      "image": "./Services/DevOps.png",
       "title": "Telesales (B2B and B2C)",
       "list": [
         "Web Development",
@@ -16,7 +16,7 @@
     },
     {
       "id": 1,
-      "image": "./Services/Digital_Marketing.png",
+      "image": "./Services/Hiring_And_Offshore.png",
       "title": "Telemarketing",
       "list": [
         "SEO",
@@ -72,8 +72,8 @@
     },
     {
       "id": 1,
-      "image": "./Services/Hiring_And_Offshore.png",
-      "title": "Website, Software & App Development",
+      "image": "./Services/Software_And_Web_Development.png",
+      "title": "Software, Web & App Development",
       "list": [
         "RPO Services",
         "Offshore Outsourcing",
@@ -86,7 +86,7 @@
     },
     {
       "id": 1,
-      "image": "./Services/Hiring_And_Offshore.png",
+      "image":  "./Services/Digital_Marketing.png",
       "title": "Digital Marketing",
       "list": [
         "RPO Services",
