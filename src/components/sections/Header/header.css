@@ -36,7 +36,7 @@ get_start_btn.banner_content h1{
     100% { transform: translateY(0); }
 }
 
-.bubble_one, .bubble_two   ,.bubble_six,.bubble_seven {
+.bubble_one, .bubble_two, .bubble_three, .bubble_four, .bubble_five, .bubble_six, .bubble_seven {
     animation: bounce 3s infinite;
 }
 

@@ -13,7 +13,7 @@ const page = () => {
           <div className="about_content my-5 py-5">
             <Image src={aboutImg} width={620} />
             <div className="">
-              <h1>About us...</h1>
+              <h1>About us</h1>
               <br />
               <p>
                 Since our inception in 2014, Velocita Infosys Limited has
@@ -54,7 +54,7 @@ const page = () => {
           </div>
 
           <div className="why_choose_us_container">
-            <h2>Why Choose Us ...</h2>
+            <h2>Why Choose Us</h2>
             <ol>
               <li>
                 <span>Expertise: </span> Our team comprises skilled professionals
