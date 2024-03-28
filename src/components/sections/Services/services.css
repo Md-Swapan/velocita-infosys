@@ -1,5 +1,5 @@
 .services_section {
-  background-color: #0b0e09;
+  /* background-color: #0b0e09; */
   padding: 100px 0px;
 }
 .services_section .heading {
@@ -80,12 +80,13 @@
 }
 .services_section .servies_card_container .service_card .content .heading {
   color: #fff;
-  font-size: 22px;
+  font-size: 20px;
   font-weight: 600;
   text-align: center;
 }
 
 .services_section .servies_card_container .service_card .content .list {
+  height: 150px;
   margin-top: 16px;
   display: grid;
   gap: 8px;

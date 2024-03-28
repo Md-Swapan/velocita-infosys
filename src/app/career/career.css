@@ -1,3 +1,6 @@
+.career_section{
+  margin-top: 150px;
+}
 .job_view_details_container{
   color: rgba(180, 180, 180, 0.952);
 }
@@ -12,4 +15,10 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 100px;
+}
+
+@media screen and (max-width: 768px) {
+  .career_section{
+    margin-top: 100px;
+  }
 }

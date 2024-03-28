@@ -5,7 +5,7 @@ const page = () => {
     <>
       <div className="privacy_policy_section_page">
         <div className="privacy_policy_container container">
-          <h1 className="mb-5">Privacy Policy ---</h1>
+          <h1 className="mb-5">Privacy Policy</h1>
           <p className="mb-5">
             At Velocita Infosys Limited, we are committed to safeguarding the
             privacy of our website visitors and service users. This policy

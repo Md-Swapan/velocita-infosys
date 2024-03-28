@@ -1,4 +1,7 @@
-.client_review_section {
+.client_review_section{
+ background-color: #0b0e09;
+}
+.client_review_section_container {
   padding: 150px 0px;
   margin: auto;
   background-image: url(../../../assets/images/client-review-section-img/Group\ 1000005238\ .png);
@@ -71,7 +74,7 @@
 
 @media only screen and (max-width: 768px) {
   .client_review_section {
-    width: 80%;
+    width: 100%;
   }
 
   .heading {

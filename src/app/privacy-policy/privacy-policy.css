@@ -1,4 +1,5 @@
 .privacy_policy_section_page {
+  margin-top: 130px;
   padding: 50px 0px;
   color: #aeaeaf;
 }
@@ -16,7 +17,13 @@
   letter-spacing: .5px;
 }
 .privacy_policy_section_page ul li span {
-  font-size: 20px;
   font-weight: 600;
   color: #20c997;
+}
+
+
+@media screen and (max-width: 768px) {
+  .privacy_policy_section_page {
+    margin-top: 100px;
+  }
 }

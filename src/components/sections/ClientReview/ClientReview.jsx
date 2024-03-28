@@ -38,7 +38,8 @@ const ClientReview = () => {
     prevArrow: <SamplePrevArrow />,
   };
   return (
-    <div className="client_review_section container">
+    <div className="client_review_section">
+      <div className="client_review_section_container container">
       <h1 className="heading">What Our Clients Say?</h1>
       <div className="client_slider_container">
         <div>
@@ -74,6 +75,7 @@ const ClientReview = () => {
           </Slider>
         </div>
       </div>
+    </div>
     </div>
   );
 };

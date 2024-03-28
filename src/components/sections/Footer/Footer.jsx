@@ -41,12 +41,13 @@ const Footer = () => {
         <div>
           <Image src={Logo} />
           <p className="footer_des">
-            Our experienced team of developers, designers, and strategists is
-            eager to explore your project idea, brainstorm solutions, and craft
-            a tailored plan to bring it to life. From web and mobile
-            applications to cutting-edge software solutions, we're committed to
-            delivering excellence every step of the way. Let's embark on this
-            journey together and create something extraordinary!"
+            Since establishment in 2014, Velocita Infosys Limited has been
+            committed to providing outstanding BPO solutions and IT services.
+            With a skilled team and experienced management, we've served clients
+            globally, prioritizing excellence, integrity, and customer
+            satisfaction. Our dedication to innovation ensures we surpass
+            expectations in the ever-evolving realm of BPO and technology
+            solutions.
           </p>
           <button className="contact_btn">Contact US</button>
         </div>

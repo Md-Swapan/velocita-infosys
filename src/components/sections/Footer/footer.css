@@ -6,6 +6,7 @@
     color: #ffffff;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin-bottom: 80px;
 }
 .footer .footer_menu .footer_des{
     color: #aeaeaf;
@@ -53,7 +54,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 10px;
+    padding: 10px 0px 15px 0px;
 }
 .footer .footer_bottom_right{
     display: flex;
