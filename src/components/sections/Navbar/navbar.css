@@ -13,7 +13,7 @@ nav.velocita_nav {
   justify-content: space-between;
 }
 nav.velocita_nav .velocita_logo img{
-  width: 270px;
+  width: 250px;
 }
 nav.velocita_nav ul {
   display: flex;

@@ -1,99 +1,125 @@
-
-get_start_btn.banner_content h1{
-    font-size: 56px;
+get_start_btn.banner_content h1 {
+  font-size: 56px;
 }
-.banner_content h1{
-    font-size: 55px;
-    font-weight: 800;
-    line-height: 65px;
-    letter-spacing: 0.005em;
-    background: -webkit-linear-gradient(180deg, #09643F 0%, #89C540 100%);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+.banner_content h1 {
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 65px;
+  letter-spacing: 0.005em;
+  background: -webkit-linear-gradient(180deg, #09643f 0%, #89c540 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
-.banner_content h2{
-    color: rgba(255, 255, 255, 1);
-    font-size: 50px;
-    font-weight: 800;
-    letter-spacing: 0.1em;
+.banner_content h2 {
+  color: rgba(255, 255, 255, 1);
+  font-size: 50px;
+  font-weight: 800;
+  letter-spacing: 0.1em;
 }
-.banner_content p{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: 0.005em;
-    text-align: left;
-    color: #C5C5C5;
+.banner_content p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.005em;
+  text-align: left;
+  color: #c5c5c5;
 }
-.banner_main_image{
-    width: 100%;
+.banner_main_image {
+  width: 100%;
 }
 
 /* Define the keyframes for the bounce animation */
 @keyframes bounce {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-10px); }
-    100% { transform: translateY(0); }
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
-.bubble_one, .bubble_two, .bubble_three, .bubble_four, .bubble_five, .bubble_six, .bubble_seven {
-    animation: bounce 3s infinite;
+.bubble_one,
+.bubble_two,
+.bubble_three,
+.bubble_four,
+.bubble_five,
+.bubble_six,
+.bubble_seven {
+  animation: bounce 3s infinite;
 }
 
 .bubble_one {
-    position: absolute;
-    left: 0;
-    top: 45%;
+  position: absolute;
+  left: 0;
+  top: 45%;
 }
 
 .bubble_two {
-    position: absolute;
-    left: 55%;
-    top: 0%;
+  position: absolute;
+  left: 55%;
+  top: 0%;
 }
 .bubble_three {
-    position: absolute;
-    top: 65%;
-    right: 2%;
+  position: absolute;
+  top: 65%;
+  right: 2%;
 }
 .bubble_four {
-    position: absolute;
-    left: 15%;
-    bottom: 13%;
+  position: absolute;
+  left: 15%;
+  bottom: 13%;
 }
 .bubble_five {
-    position: absolute;
-    left: 10%;
-    top: 10%;
+  position: absolute;
+  left: 10%;
+  top: 10%;
 }
 .bubble_six {
-    position: absolute;
-    left: 50%;
-    bottom: 7%;
+  position: absolute;
+  left: 50%;
+  bottom: 7%;
 }
 .bubble_seven {
-    position: absolute;
-    right: 0%;
-    top: 30%;
+  position: absolute;
+  right: 0%;
+  top: 30%;
 }
 
 @media only screen and (max-width: 768px) {
-    .banner_content h1{
-        font-size: 36px;
-        font-weight: 800;
-        line-height: 37px;
-        letter-spacing: 0.005em;
-        color: rgba(255, 255, 255, 1);
-    }
-    .banner_main_image{
-        width: 300px;
-        height: 300px;
-    }
+  .banner_content h1 {
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 37px;
+    letter-spacing: 0.005em;
+    color: rgba(255, 255, 255, 1);
   }
+  .banner_main_image {
+    width: 350px;
+    height: 350px;
+  }
+
+  .bubble_one {
+    left: -2%;
+    top: 45%;
+  }
+
+  .bubble_four {
+    left: 15%;
+    bottom: 3%;
+  }
+
+  .bubble_six {
+    left: 50%;
+    bottom: 0%;
+  }
+}
 /* .banner_content h1 span {
     text-shadow: 0 0 10px rgba(9, 100, 63, 0.5), 0 0 20px rgba(137, 197, 64, 0.8);
 } */
- /* color: linear-gradient(180deg, #09643F 0%, #89C540 100%);
+/* color: linear-gradient(180deg, #09643F 0%, #89C540 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     display: inline-block; */

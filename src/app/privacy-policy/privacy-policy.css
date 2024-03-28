@@ -20,3 +20,10 @@
   font-weight: 600;
   color: #20c997;
 }
+
+
+@media screen and (max-width: 768px) {
+  .privacy_policy_section_page {
+    margin-top: 100px;
+  }
+}

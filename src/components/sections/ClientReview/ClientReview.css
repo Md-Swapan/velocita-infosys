@@ -74,7 +74,7 @@
 
 @media only screen and (max-width: 768px) {
   .client_review_section {
-    width: 80%;
+    width: 100%;
   }
 
   .heading {

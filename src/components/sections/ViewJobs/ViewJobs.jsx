@@ -23,8 +23,8 @@ const ViewJobs = async () => {
 
   return (
     <div className="view_jobs_section_container mt-5">
-      <div className="view_jobs_content">
-        <table>
+      <div className="view_jobs_content" style={{overflowX:'auto'}}>
+        <table >
           <thead>
             <th>No.</th>
             <th>Post</th>

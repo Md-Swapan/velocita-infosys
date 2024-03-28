@@ -11,7 +11,7 @@ const page = () => {
       <div className="about_section_page">
         <div className="about_container container pt-5">
           <div className="about_content my-5 py-5">
-            <Image src={aboutImg} width={620} />
+            <Image src={aboutImg} className="img" />
             <div className="">
               <h1>About us</h1>
               <br />
@@ -38,10 +38,10 @@ const page = () => {
                 IT services that drive growth, efficiency, and success.
               </p>
             </div>
-            <Image src={missionImg} width={620} />
+            <Image src={missionImg} className="img" />
           </div>
           <div className="about_content my-5 py-5 ">
-            <Image src={visionImg} width={620} />
+            <Image src={visionImg} className="img" />
             <div className="">
               <h1>Vision</h1>
               <br />

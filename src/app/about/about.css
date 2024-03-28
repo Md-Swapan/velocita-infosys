@@ -12,6 +12,10 @@
   font-size: 40px;
   letter-spacing: 1px;
 }
+.img{
+  width: 620px;
+  height: auto;
+}
 
 .why_choose_us_container{
   color: rgb(190, 190, 190);
@@ -39,10 +43,18 @@
 }
 
 @media screen and (max-width: 768px) {
+  .about_section_page{
+    margin-top: 0px;
+  }
   .about_content{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 20px;
     color: rgb(190, 190, 190);
+  }
+
+  .img{
+    width: 100%;
+    height: auto;
   }
 }
