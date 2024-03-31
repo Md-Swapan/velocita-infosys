@@ -57,3 +57,11 @@
   color: white;
   border-radius:30px;
 }
+
+
+@media screen and (max-width:1200px){
+  .login_container {
+    width: 90%;
+    text-align: center;
+  }
+}
