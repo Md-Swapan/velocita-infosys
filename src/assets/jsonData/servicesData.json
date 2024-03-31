@@ -2,7 +2,7 @@
   "data": [
     {
       "id": 1,
-      "image": "./Services/DevOps.png",
+      "image": "./Services/telesale.png",
       "title": "Telesales (B2B and B2C)",
       "list": [
         "Web Development",
@@ -30,7 +30,7 @@
     },
     {
       "id": 1,
-      "image": "./Services/Artificial_Intelligency.png",
+      "image": "./Services/lead-generation.png",
       "title": "Lead Generation",
       "list": [
         "Machine Learning",
@@ -44,7 +44,7 @@
     },
     {
       "id": 1,
-      "image": "./Services/DevOps.png",
+      "image": "./Services/190119.png",
       "title": "Customer Support",
       "list": [
         "Containerization",
@@ -88,6 +88,34 @@
       "id": 1,
       "image":  "./Services/Digital_Marketing.png",
       "title": "Digital Marketing",
+      "list": [
+        "RPO Services",
+        "Offshore Outsourcing",
+        "BPO Solutions",
+        "Staff Augmentation",
+        "KPO Services"
+      ],
+      "dec": "Expand your online presence and reach your target audience with our comprehensive digital marketing services, including SEO, PPC, social media marketing, and more.",
+      "link": ""
+    },
+    {
+      "id": 1,
+      "image":  "./Services/ui-ux.png",
+      "title": "UI/UX Design",
+      "list": [
+        "RPO Services",
+        "Offshore Outsourcing",
+        "BPO Solutions",
+        "Staff Augmentation",
+        "KPO Services"
+      ],
+      "dec": "Expand your online presence and reach your target audience with our comprehensive digital marketing services, including SEO, PPC, social media marketing, and more.",
+      "link": ""
+    },
+    {
+      "id": 1,
+      "image":  "./Services/graphics.png",
+      "title": "Graphics Design",
       "list": [
         "RPO Services",
         "Offshore Outsourcing",
