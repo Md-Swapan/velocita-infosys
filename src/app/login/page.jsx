@@ -32,7 +32,7 @@ const page = () => {
         if (res.data.success == true) {
           localStorage.setItem("token", res.data.data.token)
           setTimeout(() => {
-            router.push("/")
+            router.push("/adminPanel")
           })
         }
       })
@@ -49,7 +49,7 @@ const page = () => {
 
   useEffect(() => {
     if (token) {
-      router.push("/")
+      router.push("/adminPanel")
     }
   }, [])
 
